@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>accesories_one | Tecnología, Relojería y Accesorios</title>
+  <meta name="description" content="Catálogo de tecnología, relojería y accesorios. Envíos nacionales, garantía y pago seguro." />
+  <meta name="theme-color" content="#0e1218" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="accesories_one | Tecnología, Relojería y Accesorios">
+  <meta property="og:description" content="Explora nuestra selección de tecnología, relojería y accesorios.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=1200&auto=format&fit=crop">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <!-- NAV -->
+  <header class="nav">
+    <a class="brand" href="#">ACCESORIES_ONE</a>
+    <nav class="menu" id="menu">
+      <a href="#catalogo">Catálogo</a>
+      <a href="#categorias">Categorías</a>
+      <a href="#contacto">Contacto</a>
+      <button class="btn btn-cart" id="btn-cart" aria-label="Abrir carrito">
+        🛒 <span id="cart-count" class="badge">0</span>
+      </button>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Abrir menú">☰</button>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Tecnología, Relojería y Accesorios</h1>
+        <p>Productos seleccionados, garantía y entregas rápidas. Compra fácil y segura.</p>
+        <div class="cta">
+          <a href="#catalogo" class="btn btn-primary">Ver catálogo</a>
+          <a href="#contacto" class="btn btn-outline">Cotizar por WhatsApp</a>
+        </div>
+      </div>
+      <img class="hero-img" alt="Tecnología y relojes" src="https://images.unsplash.com/photo-1517059224940-d4af9eec41e5?q=80&w=1600&auto=format&fit=crop">
+    </section>
+
+    <!-- FILTROS -->
+    <section id="catalogo" class="section">
+      <h2>Catálogo</h2>
+      <div class="filters">
+        <input id="search" type="search" placeholder="Buscar producto (ej. smartwatch, audífonos)" aria-label="Buscar producto">
+        <select id="category" aria-label="Filtrar por categoría">
+          <option value="todos">Todas las categorías</option>
+          <option value="tecnologia">Tecnología</option>
+          <option value="relojeria">Relojería</option>
+          <option value="accesorios">Accesorios</option>
+        </select>
+        <select id="sort" aria-label="Ordenar">
+          <option value="relevancia">Ordenar: Relevancia</option>
+          <option value="precio-asc">Precio: menor a mayor</option>
+          <option value="precio-desc">Precio: mayor a menor</option>
+          <option value="nombre-asc">Nombre: A → Z</option>
+          <option value="nombre-desc">Nombre: Z → A</option>
+        </select>
+      </div>
+
+      <div id="grid" class="grid grid-3"></div>
+      <p id="empty" class="muted" hidden>No hay productos que coincidan con tu búsqueda.</p>
+    </section>
+
+    <!-- CATEGORÍAS DESTACADAS -->
+    <section id="categorias" class="section section-alt">
+      <h2>Categorías</h2>
+      <div class="grid grid-3">
+        <a class="tile" data-cat="tecnologia">
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop" alt="Tecnología">
+          <span>Tecnología</span>
+        </a>
+        <a class="tile" data-cat="relojeria">
+          <img src="https://images.unsplash.com/photo-1518544801976-3e5b66aab2d3?q=80&w=1200&auto=format&fit=crop" alt="Relojería">
+          <span>Relojería</span>
+        </a>
+        <a class="tile" data-cat="accesorios">
+          <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?q=80&w=1200&auto=format&fit=crop" alt="Accesorios">
+          <span>Accesorios</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section">
+      <h2>Contacto</h2>
+      <div class="grid grid-2">
+        <form class="form" id="contact-form">
+          <div class="form-row">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" name="nombre" required placeholder="Tu nombre" />
+          </div>
+          <div class="form-row">
+            <label for="email">Correo</label>
+            <input id="email" name="email" type="email" required placeholder="tunombre@correo.com" />
+          </div>
+          <div class="form-row">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required placeholder="¿Qué producto te interesa?"></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Enviar</button>
+          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="contact-box">
+          <h3>También por WhatsApp</h3>
+          <p>Atención de L–S 9:00–18:00</p>
+          <a id="wa-link" class="btn btn-outline" target="_blank" rel="noopener">Abrir WhatsApp</a>
+          <ul class="features">
+            <li>Envíos a todo el país</li>
+            <li>Garantía en todos los productos</li>
+            <li>Múltiples medios de pago</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- CARRITO -->
+  <div id="cart-drawer" class="cart" aria-hidden="true">
+    <div class="cart-header">
+      <h3>Tu carrito</h3>
+      <button id="cart-close" class="icon-btn" aria-label="Cerrar carrito">✕</button>
+    </div>
+    <div id="cart-items" class="cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-row">
+        <span>Subtotal</span><strong id="cart-subtotal">$0</strong>
+      </div>
+      <div class="cart-actions">
+        <button id="cart-clear" class="btn btn-outline">Vaciar</button>
+        <a id="cart-checkout" class="btn btn-primary" target="_blank" rel="noopener">Finalizar por WhatsApp</a>
+      </div>
+      <p class="muted">* Integración simple: envía el pedido por WhatsApp. Se puede cambiar por pasarela (e.g., Wompi, Mercado Pago).</p>
+    </div>
+  </div>
+  <div id="backdrop" class="backdrop" hidden></div>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> ACCESORIES_ONE — Tecnología, Relojería y Accesorios.</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
