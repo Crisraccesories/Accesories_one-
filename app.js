@@ -1,34 +1,94 @@
+// app.js — index.html consume products.json
 
-// app.js — catálago básico en index.html
+document.addEventListener("DOMContentLoaded", () => {
+  const grid = document.querySelector("#productos");
+  const spanAnio = document.querySelector("#anio");
 
-const seccionProductos = document.querySelector("#productos");
-const btnCTA = document.querySelector("#ífonos TWS I12", precio: 30000, img: "https://picsum.photos/seed/i12/600/500" },const btnCTA = document.querySelector("#ctaVerProductos");
-  { id: 2, nombre: "AirDots Pro", precio: 45000, img: "https://picsum.photos/seed/airdots/600/500" },
-  { id: 3, nombre: "Smart Band 7", precio: 35000, img: "https://picsum.photos/seed/band7/600/500" },
-  { id: 4, nombre: "Reloj X22 Pro Max", precio: 110000, img: "https://picsum.photos/seed/x22/600/500" },
-  { id: 5, nombre: "Parlante GO3", precio: 35000, img: "https://picsum.photos/seed/go3/600/500" },
-  { id: 6, nombre: "Cargador 20W", precio: 50000, img: "https://picsum.photos/seed/20w/600/500" },
-];
+  if (spanAnio) spanAnio.textContent = new Date().getFullYear();
+  if (!grid) {
+    console.warn('No se encontró el contenedor "#productos" en el DOM.');
+    return;
+  }
 
-function COP(v){ return new Intl.NumberFormat("es-CO",{style:"currency",currency:"COP",maximumFractionDigits:0}).format(v); }
+  const COP = (v) =>
+    new Intl.NumberFormat("es-CO", {
+      style: "currency",
+      currency: "COP",
+      maximumFractionDigits: 0,
+    }).format(Number(v) || 0);
 
-function renderProductos() {
-  if (!seccionProductos) return;
-  seccionProductos.innerHTML = productos.map(p => `
-    <article class="card">
-      <img src="${p.img}" altnombre}</h3>
-      <p class="price">${COP(p.precio)}</p>
-      <a class="btn" href="tecnologia.html"cle>
-  `).join("");
-}
+  const isTec = (c) =>
+    !["BELLEZA", "USO PERSONAL", "TERMO", "SOMBRILLA"].some((n) =>
+      String(c || "").toUpperCase().includes(n)
+    );
 
-btnCTA?.addEventListener("click", () => {
-  document.querySelector("#productos")?.scrollIntoView({ behavior: "smooth", block: "start" });
+  const escapeHTML = (s) =>
+    String(s ?? "")
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#39;");
+
+  async function loadIndex() {
+    try {
+      const r = await fetch("./products.json", { cache: "no-store" });
+      if (!r.ok) throw new Error(`HTTP ${r.status} al cargar products.json`);
+
+      const all = await r.json();
+      if (!Array.isArray(all)) throw new Error("El JSON no es un array.");
+
+      const items = all.filter((p) => isTec(p?.categoria)).slice(0, 8);
+
+      if (items.length === 0) {
+        grid.innerHTML = '<p>No hay productos para mostrar.</p>';
+        return;
+      }
+
+      grid.innerHTML = items
+        .map((p) => {
+          const nombre = escapeHTML(p?.nombre ?? "Producto");
+          const categoria = escapeHTML(p?.categoria ?? "");
+          const precio = COP(p?.precio);
+
+          const detalleHref =
+            typeof p?.url === "string" && p.url.trim()
+              ? p.url
+              : "tecnologia.html";
+
+          let imgHtml = "";
+          if (typeof p?.img === "string" && p.img.trim()) {
+            if (/^</.test(p.img.trim())) {
+              imgHtml = p.img; // ya viene como <img ...>
+            } else {
+              const imgUrl = escapeHTML(p.img);
+              imgHtml = `${imgUrl}`;
+            }
+          } else {
+            imgHtml =
+              '<div class="img placeholder" aria-hidden="true">Sin imagen</div>';
+          }
+
+          return `
+            <article class="card">
+              ${detalleHref}
+                ${imgHtml}
+              </a>
+              <h3 class="title">${nombre}</h3>
+              <p class="category">${categoria}</p>
+              <p class="price">${precio}</p>
+              <p class="actions">
+                ${detalleHref}Ver más</a>
+              </p>
+            </article>
+          `;
+        })
+        .join("");
+    } catch (e) {
+      console.error("Error cargando catálogo:", e);
+      grid.innerHTML = '<p>Error cargando el catálogo. Intenta más tarde.</p>';
+    }
+  }
+
+  loadIndex();
 });
-
-renderProductos();
-const spanAnio = document.querySelector("#anio");
-if (spanAnio) spanAnio.textContent = new Date().getFullYear();
-
-const productos = [
-
