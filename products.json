@@ -1,0 +1,1038 @@
+[
+  {
+    "id": 1,
+    "nombre": "Samsung",
+    "precio": 10000,
+    "categoria": "OTROS",
+    "img": "https://source.unsplash.com/800x600/?tech+gadgets"
+  },
+  {
+    "id": 2,
+    "nombre": "Manos  Libres  Colores",
+    "precio": 12000,
+    "categoria": "OTROS",
+    "img": "https://source.unsplash.com/800x600/?tech+gadgets"
+  },
+  {
+    "id": 3,
+    "nombre": "Manos  Libres  Huawei",
+    "precio": 10000,
+    "categoria": "OTROS",
+    "img": "https://source.unsplash.com/800x600/?wired+earphones"
+  },
+  {
+    "id": 4,
+    "nombre": "Manos  Libres  G-01",
+    "precio": 15000,
+    "categoria": "OTROS",
+    "img": "https://source.unsplash.com/800x600/?tech+gadgets"
+  },
+  {
+    "id": 5,
+    "nombre": "Manos  Libres  Enjoy",
+    "precio": 10000,
+    "categoria": "OTROS",
+    "img": "https://source.unsplash.com/800x600/?tech+gadgets"
+  },
+  {
+    "id": 6,
+    "nombre": "Manos  Libres  Xiaomi",
+    "precio": 15000,
+    "categoria": "OTROS",
+    "img": "https://source.unsplash.com/800x600/?wired+earphones"
+  },
+  {
+    "id": 7,
+    "nombre": "Manos  Libres  Akg  S8",
+    "precio": 12000,
+    "categoria": "OTROS",
+    "img": "https://source.unsplash.com/800x600/?wired+earphones"
+  },
+  {
+    "id": 8,
+    "nombre": "Manos  Libres  Akg  S10+",
+    "precio": 15000,
+    "categoria": "OTROS",
+    "img": "https://source.unsplash.com/800x600/?wired+earphones"
+  },
+  {
+    "id": 9,
+    "nombre": "Manos  Libres  Tipo  C",
+    "precio": 25000,
+    "categoria": "OTROS",
+    "img": "https://source.unsplash.com/800x600/?tech+gadgets"
+  },
+  {
+    "id": 10,
+    "nombre": "Ramitech",
+    "precio": 30000,
+    "categoria": "OTROS",
+    "img": "https://source.unsplash.com/800x600/?tech+gadgets"
+  },
+  {
+    "id": 11,
+    "nombre": "Manos  Libres  Skiny  Chupa",
+    "precio": 15000,
+    "categoria": "OTROS",
+    "img": "https://source.unsplash.com/800x600/?tech+gadgets"
+  },
+  {
+    "id": 12,
+    "nombre": "Controltalk",
+    "precio": 12000,
+    "categoria": "MANOS LIBRES",
+    "img": "https://source.unsplash.com/800x600/?wired+earphones"
+  },
+  {
+    "id": 13,
+    "nombre": "Manos  Libres  U19",
+    "precio": 10000,
+    "categoria": "MANOS LIBRES",
+    "img": "https://source.unsplash.com/800x600/?wired+earphones"
+  },
+  {
+    "id": 14,
+    "nombre": "Manos  Libres  Yoyosmart",
+    "precio": 12000,
+    "categoria": "MANOS LIBRES",
+    "img": "https://source.unsplash.com/800x600/?wired+earphones"
+  },
+  {
+    "id": 15,
+    "nombre": "Manos  Libres  Smart  Plus",
+    "precio": 20000,
+    "categoria": "MANOS LIBRES",
+    "img": "https://source.unsplash.com/800x600/?wired+earphones"
+  },
+  {
+    "id": 16,
+    "nombre": "Metal  776",
+    "precio": 20000,
+    "categoria": "MANOS LIBRES",
+    "img": "https://source.unsplash.com/800x600/?wired+earphones"
+  },
+  {
+    "id": 17,
+    "nombre": "Manos  Libres  J5",
+    "precio": 7000,
+    "categoria": "MANOS LIBRES",
+    "img": "https://source.unsplash.com/800x600/?wired+earphones"
+  },
+  {
+    "id": 18,
+    "nombre": "Manos  Libres  S6",
+    "precio": 7000,
+    "categoria": "MANOS LIBRES",
+    "img": "https://source.unsplash.com/800x600/?wired+earphones"
+  },
+  {
+    "id": 19,
+    "nombre": "Naisu",
+    "precio": 20000,
+    "categoria": "MANOS LIBRES",
+    "img": "https://source.unsplash.com/800x600/?wired+earphones"
+  },
+  {
+    "id": 20,
+    "nombre": "Manos  Libres  Acem",
+    "precio": 10000,
+    "categoria": "MANOS LIBRES",
+    "img": "https://source.unsplash.com/800x600/?wired+earphones"
+  },
+  {
+    "id": 21,
+    "nombre": "Amarillo",
+    "precio": 15000,
+    "categoria": "AUDIFONOS BLUETOOTH",
+    "img": "https://source.unsplash.com/800x600/?wireless+earbuds"
+  },
+  {
+    "id": 22,
+    "nombre": "Bluetooth  Sin Chupa",
+    "precio": 15000,
+    "categoria": "AUDIFONOS BLUETOOTH",
+    "img": "https://source.unsplash.com/800x600/?wireless+earbuds"
+  },
+  {
+    "id": 23,
+    "nombre": "I12 Economico",
+    "precio": 30000,
+    "categoria": "AUDIFONOS BLUETOOTH",
+    "img": "https://source.unsplash.com/800x600/?wireless+earbuds"
+  },
+  {
+    "id": 24,
+    "nombre": "Inpods  12 Sag",
+    "precio": 35000,
+    "categoria": "AUDIFONOS BLUETOOTH",
+    "img": "https://source.unsplash.com/800x600/?wireless+earbuds"
+  },
+  {
+    "id": 25,
+    "nombre": "Airdots  Botón",
+    "precio": 40000,
+    "categoria": "AUDIFONOS",
+    "img": "https://source.unsplash.com/800x600/?wireless+earbuds"
+  },
+  {
+    "id": 26,
+    "nombre": "Airdotspro  Tactil",
+    "precio": 45000,
+    "categoria": "AUDIFONOS",
+    "img": "https://source.unsplash.com/800x600/?wireless+earbuds"
+  },
+  {
+    "id": 27,
+    "nombre": "M11 Power  Bank",
+    "precio": 40000,
+    "categoria": "AUDIFONOS",
+    "img": "https://source.unsplash.com/800x600/?headphones+earbuds"
+  },
+  {
+    "id": 28,
+    "nombre": "Pro  7S",
+    "precio": 60000,
+    "categoria": "AUDIFONOS",
+    "img": "https://source.unsplash.com/800x600/?headphones+earbuds"
+  },
+  {
+    "id": 29,
+    "nombre": "Yx06  Tipo  Jbl",
+    "precio": 65000,
+    "categoria": "AUDIFONOS",
+    "img": "https://source.unsplash.com/800x600/?headphones+earbuds"
+  },
+  {
+    "id": 30,
+    "nombre": "F1 Labial",
+    "precio": 90000,
+    "categoria": "AUDIFONOS",
+    "img": "https://source.unsplash.com/800x600/?headphones+earbuds"
+  },
+  {
+    "id": 31,
+    "nombre": "Earcuff  G10 Karmabeo",
+    "precio": 110000,
+    "categoria": "AUDIFONOS",
+    "img": "https://source.unsplash.com/800x600/?headphones+earbuds"
+  },
+  {
+    "id": 32,
+    "nombre": "Audifono  Ram -495Bt",
+    "precio": 55000,
+    "categoria": "AUDIFONOS",
+    "img": "https://source.unsplash.com/800x600/?headphones+earbuds"
+  },
+  {
+    "id": 33,
+    "nombre": "Galaxy  Buds  Pro",
+    "precio": 75000,
+    "categoria": "AUDIFONOS",
+    "img": "https://source.unsplash.com/800x600/?headphones+earbuds"
+  },
+  {
+    "id": 34,
+    "nombre": "Samsung  Buds  +",
+    "precio": 75000,
+    "categoria": "AUDIFONOS",
+    "img": "https://source.unsplash.com/800x600/?headphones+earbuds"
+  },
+  {
+    "id": 35,
+    "nombre": "Galaxy  Buds  2",
+    "precio": 75000,
+    "categoria": "AUDIFONOS",
+    "img": "https://source.unsplash.com/800x600/?headphones+earbuds"
+  },
+  {
+    "id": 36,
+    "nombre": "Galaxy  Buds  2 Pro",
+    "precio": 70000,
+    "categoria": "AUDIFONOS",
+    "img": "https://source.unsplash.com/800x600/?headphones+earbuds"
+  },
+  {
+    "id": 37,
+    "nombre": "Samsung  S9",
+    "precio": 40000,
+    "categoria": "AUDIFONOS",
+    "img": "https://source.unsplash.com/800x600/?headphones+earbuds"
+  },
+  {
+    "id": 38,
+    "nombre": "Conducciòn  Osea  Bose  S7",
+    "precio": 40000,
+    "categoria": "AUDIFONOS",
+    "img": "https://source.unsplash.com/800x600/?headphones+earbuds"
+  },
+  {
+    "id": 39,
+    "nombre": "Karmabeo",
+    "precio": 130000,
+    "categoria": "AUDIFONOS",
+    "img": "https://source.unsplash.com/800x600/?headphones+earbuds"
+  },
+  {
+    "id": 40,
+    "nombre": "Sumergible",
+    "precio": 190000,
+    "categoria": "AUDIFONOS",
+    "img": "https://source.unsplash.com/800x600/?headphones+earbuds"
+  },
+  {
+    "id": 41,
+    "nombre": "Cuellera  Ram -Kml12",
+    "precio": 40000,
+    "categoria": "DIADEMAS",
+    "img": "https://source.unsplash.com/800x600/?over+ear+headphones"
+  },
+  {
+    "id": 42,
+    "nombre": "Cuellera  Naisu  Na-06",
+    "precio": 50000,
+    "categoria": "DIADEMAS",
+    "img": "https://source.unsplash.com/800x600/?over+ear+headphones"
+  },
+  {
+    "id": 43,
+    "nombre": "Cuellera  X-Bom  1",
+    "precio": 50000,
+    "categoria": "DIADEMAS",
+    "img": "https://source.unsplash.com/800x600/?over+ear+headphones"
+  },
+  {
+    "id": 44,
+    "nombre": "Cuellera  Nt-Abs41",
+    "precio": 55000,
+    "categoria": "DIADEMAS",
+    "img": "https://source.unsplash.com/800x600/?over+ear+headphones"
+  },
+  {
+    "id": 45,
+    "nombre": "Cuellera  Ram -Ba241",
+    "precio": 55000,
+    "categoria": "DIADEMAS",
+    "img": "https://source.unsplash.com/800x600/?over+ear+headphones"
+  },
+  {
+    "id": 46,
+    "nombre": "Economicos",
+    "precio": 18000,
+    "categoria": "MANOS LIBRES",
+    "img": "https://source.unsplash.com/800x600/?wired+earphones"
+  },
+  {
+    "id": 47,
+    "nombre": "Directa  1.1 Original",
+    "precio": 60000,
+    "categoria": "MANOS LIBRES",
+    "img": "https://source.unsplash.com/800x600/?wired+earphones"
+  },
+  {
+    "id": 48,
+    "nombre": "Airpods  Serie  3 1.1",
+    "precio": 70000,
+    "categoria": "MANOS LIBRES",
+    "img": "https://source.unsplash.com/800x600/?wireless+earbuds"
+  },
+  {
+    "id": 49,
+    "nombre": "Airpods  Serie  3 Negro",
+    "precio": 60000,
+    "categoria": "MANOS LIBRES",
+    "img": "https://source.unsplash.com/800x600/?wireless+earbuds"
+  },
+  {
+    "id": 50,
+    "nombre": "Airpods  Pro  1.1",
+    "precio": 80000,
+    "categoria": "MANOS LIBRES",
+    "img": "https://source.unsplash.com/800x600/?wireless+earbuds"
+  },
+  {
+    "id": 51,
+    "nombre": "Airpods  Pro  2 Anc",
+    "precio": 100000,
+    "categoria": "MANOS LIBRES",
+    "img": "https://source.unsplash.com/800x600/?wireless+earbuds"
+  },
+  {
+    "id": 52,
+    "nombre": "Original",
+    "precio": 50000,
+    "categoria": "CARGADORES",
+    "img": "https://source.unsplash.com/800x600/?phone+charger"
+  },
+  {
+    "id": 53,
+    "nombre": "Adaptador  20W",
+    "precio": 30000,
+    "categoria": "CARGADORES",
+    "img": "https://source.unsplash.com/800x600/?phone+charger"
+  },
+  {
+    "id": 54,
+    "nombre": "Adaptador  25W",
+    "precio": 40000,
+    "categoria": "CARGADORES",
+    "img": "https://source.unsplash.com/800x600/?phone+charger"
+  },
+  {
+    "id": 55,
+    "nombre": "Multipuerto",
+    "precio": 35000,
+    "categoria": "CARGADORES",
+    "img": "https://source.unsplash.com/800x600/?phone+charger"
+  },
+  {
+    "id": 56,
+    "nombre": "Banda  M6",
+    "precio": 30000,
+    "categoria": "SMARTWATCH",
+    "img": "https://source.unsplash.com/800x600/?smartwatch"
+  },
+  {
+    "id": 57,
+    "nombre": "Smart  Band  7",
+    "precio": 35000,
+    "categoria": "SMARTWATCH",
+    "img": "https://source.unsplash.com/800x600/?smartwatch"
+  },
+  {
+    "id": 58,
+    "nombre": "Pulso",
+    "precio": 50000,
+    "categoria": "SMARTWATCH",
+    "img": "https://source.unsplash.com/800x600/?smartwatch"
+  },
+  {
+    "id": 59,
+    "nombre": "(Serie  7)",
+    "precio": 110000,
+    "categoria": "SMARTWATCH",
+    "img": "https://source.unsplash.com/800x600/?smartwatch"
+  },
+  {
+    "id": 60,
+    "nombre": "Pulso  (45Mm)",
+    "precio": 130000,
+    "categoria": "SMARTWATCH",
+    "img": "https://source.unsplash.com/800x600/?smartwatch"
+  },
+  {
+    "id": 61,
+    "nombre": "Sumergible  Ip68",
+    "precio": 250000,
+    "categoria": "SMARTWATCH",
+    "img": "https://source.unsplash.com/800x600/?smartwatch"
+  },
+  {
+    "id": 62,
+    "nombre": "6 Meses  De Garantia",
+    "precio": 240000,
+    "categoria": "SMARTWATCH",
+    "img": "https://source.unsplash.com/800x600/?smartwatch"
+  },
+  {
+    "id": 63,
+    "nombre": "Amoled\"",
+    "precio": 180000,
+    "categoria": "SMARTWATCH",
+    "img": "https://source.unsplash.com/800x600/?smartwatch"
+  },
+  {
+    "id": 64,
+    "nombre": "6 Meses  De Garantia",
+    "precio": 150000,
+    "categoria": "SMARTWATCH",
+    "img": "https://source.unsplash.com/800x600/?smartwatch"
+  },
+  {
+    "id": 65,
+    "nombre": "6 Meses  De Garantia",
+    "precio": 130000,
+    "categoria": "SMARTWATCH",
+    "img": "https://source.unsplash.com/800x600/?smartwatch"
+  },
+  {
+    "id": 66,
+    "nombre": "6 Meses  De Garantia",
+    "precio": 170000,
+    "categoria": "SMARTWATCH",
+    "img": "https://source.unsplash.com/800x600/?smartwatch"
+  },
+  {
+    "id": 67,
+    "nombre": "Combo  Reloj  Ew68  Ultra",
+    "precio": 90000,
+    "categoria": "SMARTWATCH",
+    "img": "https://source.unsplash.com/800x600/?smartwatch"
+  },
+  {
+    "id": 68,
+    "nombre": "Combo  Reloj  Ultra  Y800",
+    "precio": 130000,
+    "categoria": "SMARTWATCH",
+    "img": "https://source.unsplash.com/800x600/?smartwatch"
+  },
+  {
+    "id": 69,
+    "nombre": "6 Meses  De Garantia",
+    "precio": 250000,
+    "categoria": "SMARTWATCH",
+    "img": "https://source.unsplash.com/800x600/?smartwatch"
+  },
+  {
+    "id": 70,
+    "nombre": "Alambrico",
+    "precio": 30000,
+    "categoria": "COMPUTADOR",
+    "img": "https://source.unsplash.com/800x600/?gaming+keyboard+mouse"
+  },
+  {
+    "id": 71,
+    "nombre": "Alambrico",
+    "precio": 45000,
+    "categoria": "COMPUTADOR",
+    "img": "https://source.unsplash.com/800x600/?gaming+keyboard+mouse"
+  },
+  {
+    "id": 72,
+    "nombre": "Combo  Dell  Inalambrico",
+    "precio": 55000,
+    "categoria": "COMPUTADOR",
+    "img": "https://source.unsplash.com/800x600/?gaming+keyboard+mouse"
+  },
+  {
+    "id": 73,
+    "nombre": "Inalambrico",
+    "precio": 50000,
+    "categoria": "COMPUTADOR",
+    "img": "https://source.unsplash.com/800x600/?gaming+keyboard+mouse"
+  },
+  {
+    "id": 74,
+    "nombre": "Combo  K03 Inalambrico  Bt",
+    "precio": 50000,
+    "categoria": "COMPUTADOR",
+    "img": "https://source.unsplash.com/800x600/?gaming+keyboard+mouse"
+  },
+  {
+    "id": 75,
+    "nombre": "Inlambrico  Bt",
+    "precio": 60000,
+    "categoria": "COMPUTADOR",
+    "img": "https://source.unsplash.com/800x600/?gaming+keyboard+mouse"
+  },
+  {
+    "id": 76,
+    "nombre": "Mini  Teclado  Bt",
+    "precio": 50000,
+    "categoria": "COMPUTADOR",
+    "img": "https://source.unsplash.com/800x600/?mechanical+keyboard"
+  },
+  {
+    "id": 77,
+    "nombre": "Base  Refrierante  N66",
+    "precio": 35000,
+    "categoria": "COMPUTADOR",
+    "img": "https://source.unsplash.com/800x600/?gaming+keyboard+mouse"
+  },
+  {
+    "id": 78,
+    "nombre": "Vetiladores",
+    "precio": 65000,
+    "categoria": "COMPUTADOR",
+    "img": "https://source.unsplash.com/800x600/?gaming+keyboard+mouse"
+  },
+  {
+    "id": 79,
+    "nombre": "Base  Refrigerante  Sy-K2",
+    "precio": 60000,
+    "categoria": "COMPUTADOR",
+    "img": "https://source.unsplash.com/800x600/?gaming+keyboard+mouse"
+  },
+  {
+    "id": 80,
+    "nombre": "Mouse  Optico  M1",
+    "precio": 15000,
+    "categoria": "COMPUTADOR",
+    "img": "https://source.unsplash.com/800x600/?computer+mouse"
+  },
+  {
+    "id": 81,
+    "nombre": "Mouse  Inalam  Ramitech",
+    "precio": 50000,
+    "categoria": "COMPUTADOR",
+    "img": "https://source.unsplash.com/800x600/?computer+mouse"
+  },
+  {
+    "id": 82,
+    "nombre": "Mouse  Nekar  Inalambrico",
+    "precio": 25000,
+    "categoria": "COMPUTADOR",
+    "img": "https://source.unsplash.com/800x600/?computer+mouse"
+  },
+  {
+    "id": 83,
+    "nombre": "Audio  Y Video",
+    "precio": 35000,
+    "categoria": "PARLANTE",
+    "img": "https://source.unsplash.com/800x600/?bluetooth+speaker"
+  },
+  {
+    "id": 84,
+    "nombre": "Charge  Mini  3+ Jbl",
+    "precio": 35000,
+    "categoria": "PARLANTE",
+    "img": "https://source.unsplash.com/800x600/?bluetooth+speaker"
+  },
+  {
+    "id": 85,
+    "nombre": "Clip  4 Jbl",
+    "precio": 35000,
+    "categoria": "PARLANTE",
+    "img": "https://source.unsplash.com/800x600/?bluetooth+speaker"
+  },
+  {
+    "id": 86,
+    "nombre": "Flip  Mini  Jbl",
+    "precio": 40000,
+    "categoria": "PARLANTE",
+    "img": "https://source.unsplash.com/800x600/?bluetooth+speaker"
+  },
+  {
+    "id": 87,
+    "nombre": "Flip  6 Jbl",
+    "precio": 70000,
+    "categoria": "PARLANTE",
+    "img": "https://source.unsplash.com/800x600/?bluetooth+speaker"
+  },
+  {
+    "id": 88,
+    "nombre": "Boonsbox  3 Jbl",
+    "precio": 50000,
+    "categoria": "PARLANTE",
+    "img": "https://source.unsplash.com/800x600/?bluetooth+speaker"
+  },
+  {
+    "id": 89,
+    "nombre": "Boombox  3 Pro  Jbl",
+    "precio": 120000,
+    "categoria": "PARLANTE",
+    "img": "https://source.unsplash.com/800x600/?bluetooth+speaker"
+  },
+  {
+    "id": 90,
+    "nombre": "Booms  Box  3 Mini  Jbl",
+    "precio": 60000,
+    "categoria": "PARLANTE",
+    "img": "https://source.unsplash.com/800x600/?bluetooth+speaker"
+  },
+  {
+    "id": 91,
+    "nombre": "Box3  Mini  Led Jbl",
+    "precio": 60000,
+    "categoria": "PARLANTE",
+    "img": "https://source.unsplash.com/800x600/?bluetooth+speaker"
+  },
+  {
+    "id": 92,
+    "nombre": "Boombox  3 Jbl",
+    "precio": 220000,
+    "categoria": "PARLANTE",
+    "img": "https://source.unsplash.com/800x600/?bluetooth+speaker"
+  },
+  {
+    "id": 93,
+    "nombre": "Ys-207",
+    "precio": 175000,
+    "categoria": "PARLANTE",
+    "img": "https://source.unsplash.com/800x600/?bluetooth+speaker"
+  },
+  {
+    "id": 94,
+    "nombre": "Ys-224",
+    "precio": 175000,
+    "categoria": "PARLANTE",
+    "img": "https://source.unsplash.com/800x600/?bluetooth+speaker"
+  },
+  {
+    "id": 95,
+    "nombre": "Tdt Niia",
+    "precio": 60000,
+    "categoria": "CAMARA",
+    "img": "https://source.unsplash.com/800x600/?security+camera"
+  },
+  {
+    "id": 96,
+    "nombre": "Tipo  V8",
+    "precio": 15000,
+    "categoria": "MOTO",
+    "img": "https://source.unsplash.com/800x600/?tech+gadgets"
+  },
+  {
+    "id": 97,
+    "nombre": "Samsung  Economico  Tipo",
+    "precio": 15000,
+    "categoria": "CARGADORES",
+    "img": "https://source.unsplash.com/800x600/?phone+charger"
+  },
+  {
+    "id": 98,
+    "nombre": "Xiaomi  20W Tipo  C",
+    "precio": 20000,
+    "categoria": "CARGADORES",
+    "img": "https://source.unsplash.com/800x600/?wired+earphones"
+  },
+  {
+    "id": 99,
+    "nombre": "Tipo  C",
+    "precio": 18000,
+    "categoria": "CARGADORES",
+    "img": "https://source.unsplash.com/800x600/?phone+charger"
+  },
+  {
+    "id": 100,
+    "nombre": "Samsung  25W  Tipo  C",
+    "precio": 25000,
+    "categoria": "CARGADORES",
+    "img": "https://source.unsplash.com/800x600/?phone+charger"
+  },
+  {
+    "id": 101,
+    "nombre": "Puerto  Tipo  C",
+    "precio": 35000,
+    "categoria": "CARGADORES",
+    "img": "https://source.unsplash.com/800x600/?phone+charger"
+  },
+  {
+    "id": 102,
+    "nombre": "Carga  Rapida",
+    "precio": 25000,
+    "categoria": "MOTO",
+    "img": "https://source.unsplash.com/800x600/?tech+gadgets"
+  },
+  {
+    "id": 103,
+    "nombre": "Adaptador  Xion  4.1",
+    "precio": 15000,
+    "categoria": "MOTO",
+    "img": "https://source.unsplash.com/800x600/?phone+charger"
+  },
+  {
+    "id": 104,
+    "nombre": "Adaptador  Harvic  3.4",
+    "precio": 20000,
+    "categoria": "MOTO",
+    "img": "https://source.unsplash.com/800x600/?phone+charger"
+  },
+  {
+    "id": 105,
+    "nombre": "Joystick  Para  Celular",
+    "precio": 30000,
+    "categoria": "MOTO",
+    "img": "https://source.unsplash.com/800x600/?tech+gadgets"
+  },
+  {
+    "id": 106,
+    "nombre": "Game  Stick",
+    "precio": 120000,
+    "categoria": "MOTO",
+    "img": "https://source.unsplash.com/800x600/?tech+gadgets"
+  },
+  {
+    "id": 107,
+    "nombre": "Edition)",
+    "precio": 230000,
+    "categoria": "MOTO",
+    "img": "https://source.unsplash.com/800x600/?tech+gadgets"
+  },
+  {
+    "id": 108,
+    "nombre": "1Hora",
+    "precio": 40000,
+    "categoria": "MOTO",
+    "img": "https://source.unsplash.com/800x600/?tech+gadgets"
+  },
+  {
+    "id": 109,
+    "nombre": "1Hora",
+    "precio": 60000,
+    "categoria": "MOTO",
+    "img": "https://source.unsplash.com/800x600/?tech+gadgets"
+  },
+  {
+    "id": 110,
+    "nombre": "1Hora",
+    "precio": 90000,
+    "categoria": "MOTO",
+    "img": "https://source.unsplash.com/800x600/?tech+gadgets"
+  },
+  {
+    "id": 111,
+    "nombre": "Ramitech",
+    "precio": 40000,
+    "categoria": "MOTO",
+    "img": "https://source.unsplash.com/800x600/?tech+gadgets"
+  },
+  {
+    "id": 112,
+    "nombre": "Power  Bank  20.000  Mah",
+    "precio": 100000,
+    "categoria": "MOTO",
+    "img": "https://source.unsplash.com/800x600/?tech+gadgets"
+  },
+  {
+    "id": 113,
+    "nombre": "Adaptador  Europeo",
+    "precio": 15000,
+    "categoria": "MOTO",
+    "img": "https://source.unsplash.com/800x600/?phone+charger"
+  },
+  {
+    "id": 121,
+    "nombre": "Carga  Rapida",
+    "precio": 35000,
+    "categoria": "CARGADORES",
+    "img": "https://source.unsplash.com/800x600/?phone+charger"
+  },
+  {
+    "id": 122,
+    "nombre": "Carga  Rapida",
+    "precio": 27000,
+    "categoria": "CARGADORES",
+    "img": "https://source.unsplash.com/800x600/?phone+charger"
+  },
+  {
+    "id": 123,
+    "nombre": "3.1A",
+    "precio": 12000,
+    "categoria": "CARGADORES",
+    "img": "https://source.unsplash.com/800x600/?phone+charger"
+  },
+  {
+    "id": 124,
+    "nombre": "Karmabeo  25W",
+    "precio": 20000,
+    "categoria": "CARGADORES",
+    "img": "https://source.unsplash.com/800x600/?phone+charger"
+  },
+  {
+    "id": 125,
+    "nombre": "Bluetooth Usb Para",
+    "precio": 15000,
+    "categoria": "CARRO",
+    "img": "https://source.unsplash.com/800x600/?tech+gadgets"
+  },
+  {
+    "id": 126,
+    "nombre": "Bluetooth  Aux  Para",
+    "precio": 15000,
+    "categoria": "CARRO",
+    "img": "https://source.unsplash.com/800x600/?tech+gadgets"
+  },
+  {
+    "id": 127,
+    "nombre": "Cb13  3.0",
+    "precio": 30000,
+    "categoria": "CARRO",
+    "img": "https://source.unsplash.com/800x600/?tech+gadgets"
+  },
+  {
+    "id": 128,
+    "nombre": "M24 3.1",
+    "precio": 35000,
+    "categoria": "CARRO",
+    "img": "https://source.unsplash.com/800x600/?tech+gadgets"
+  },
+  {
+    "id": 129,
+    "nombre": "Soporte  Celular  Espejo",
+    "precio": 20000,
+    "categoria": "MOTO",
+    "img": "https://source.unsplash.com/800x600/?tech+gadgets"
+  },
+  {
+    "id": 130,
+    "nombre": "Soporte Celular",
+    "precio": 20000,
+    "categoria": "MOTO",
+    "img": "https://source.unsplash.com/800x600/?tech+gadgets"
+  },
+  {
+    "id": 131,
+    "nombre": "Manubrio  Yoyos",
+    "precio": 25000,
+    "categoria": "MOTO",
+    "img": "https://source.unsplash.com/800x600/?tech+gadgets"
+  },
+  {
+    "id": 132,
+    "nombre": "Bluetooth  Para  Casco",
+    "precio": 80000,
+    "categoria": "MOTO",
+    "img": "https://source.unsplash.com/800x600/?tech+gadgets"
+  },
+  {
+    "id": 133,
+    "nombre": "Xp363",
+    "precio": 30000,
+    "categoria": "HOLDER",
+    "img": "https://source.unsplash.com/800x600/?phone+holder+car"
+  },
+  {
+    "id": 134,
+    "nombre": "Tablet  Y Celular",
+    "precio": 30000,
+    "categoria": "HOLDER",
+    "img": "https://source.unsplash.com/800x600/?phone+holder+car"
+  },
+  {
+    "id": 151,
+    "nombre": "Rapida",
+    "precio": 20000,
+    "categoria": "CABLES",
+    "img": "https://source.unsplash.com/800x600/?usb+cable"
+  },
+  {
+    "id": 152,
+    "nombre": "Metros",
+    "precio": 15000,
+    "categoria": "CABLES",
+    "img": "https://source.unsplash.com/800x600/?usb+cable"
+  },
+  {
+    "id": 153,
+    "nombre": "Rapida",
+    "precio": 15000,
+    "categoria": "CABLES",
+    "img": "https://source.unsplash.com/800x600/?usb+cable"
+  },
+  {
+    "id": 154,
+    "nombre": "Ldnio",
+    "precio": 15000,
+    "categoria": "CABLES",
+    "img": "https://source.unsplash.com/800x600/?usb+cable"
+  },
+  {
+    "id": 155,
+    "nombre": "Conect",
+    "precio": 15000,
+    "categoria": "CABLES",
+    "img": "https://source.unsplash.com/800x600/?usb+cable"
+  },
+  {
+    "id": 156,
+    "nombre": "Conect  Magnetico",
+    "precio": 15000,
+    "categoria": "CABLES",
+    "img": "https://source.unsplash.com/800x600/?usb+cable"
+  },
+  {
+    "id": 157,
+    "nombre": "Triestereo",
+    "precio": 10000,
+    "categoria": "CABLES",
+    "img": "https://source.unsplash.com/800x600/?usb+cable"
+  },
+  {
+    "id": 158,
+    "nombre": "Vidrio  5D",
+    "precio": 8000,
+    "categoria": "ACCESORIOS",
+    "img": "https://source.unsplash.com/800x600/?phone+accessories"
+  },
+  {
+    "id": 159,
+    "nombre": "Airpods  Serie  2-3 Y Pro",
+    "precio": 15000,
+    "categoria": "ACCESORIOS",
+    "img": "https://source.unsplash.com/800x600/?wireless+earbuds"
+  },
+  {
+    "id": 160,
+    "nombre": "Airpods  Serie  2",
+    "precio": 18000,
+    "categoria": "ACCESORIOS",
+    "img": "https://source.unsplash.com/800x600/?wireless+earbuds"
+  },
+  {
+    "id": 161,
+    "nombre": "Airpods  Serie  3",
+    "precio": 18000,
+    "categoria": "ACCESORIOS",
+    "img": "https://source.unsplash.com/800x600/?wireless+earbuds"
+  },
+  {
+    "id": 162,
+    "nombre": "Airpods  Pro  1.1",
+    "precio": 18000,
+    "categoria": "ACCESORIOS",
+    "img": "https://source.unsplash.com/800x600/?wireless+earbuds"
+  },
+  {
+    "id": 163,
+    "nombre": "Airpods  Pro  2",
+    "precio": 20000,
+    "categoria": "ACCESORIOS",
+    "img": "https://source.unsplash.com/800x600/?wireless+earbuds"
+  },
+  {
+    "id": 164,
+    "nombre": "Protector  Espiral  Para",
+    "precio": 8000,
+    "categoria": "CABLES",
+    "img": "https://source.unsplash.com/800x600/?usb+cable"
+  },
+  {
+    "id": 165,
+    "nombre": "Pulso Nylon Para",
+    "precio": 20000,
+    "categoria": "SMARTWATCH",
+    "img": "https://source.unsplash.com/800x600/?smartwatch"
+  },
+  {
+    "id": 166,
+    "nombre": "Micro  Sd 8Gb",
+    "precio": 12500,
+    "categoria": "SMARTWATCH",
+    "img": "https://source.unsplash.com/800x600/?smartwatch"
+  },
+  {
+    "id": 167,
+    "nombre": "Micro  Sd 16Gb",
+    "precio": 17000,
+    "categoria": "SMARTWATCH",
+    "img": "https://source.unsplash.com/800x600/?smartwatch"
+  },
+  {
+    "id": 168,
+    "nombre": "Micro  Sd 32Gb",
+    "precio": 22000,
+    "categoria": "SMARTWATCH",
+    "img": "https://source.unsplash.com/800x600/?smartwatch"
+  },
+  {
+    "id": 169,
+    "nombre": "Micro  Sd64Gb",
+    "precio": 38000,
+    "categoria": "SMARTWATCH",
+    "img": "https://source.unsplash.com/800x600/?smartwatch"
+  },
+  {
+    "id": 170,
+    "nombre": "Pila  Aa Recargable",
+    "precio": 25000,
+    "categoria": "MEMORIAS",
+    "img": "https://source.unsplash.com/800x600/?usb+flash+drive"
+  },
+  {
+    "id": 171,
+    "nombre": "Pila  Aaa  Recargable",
+    "precio": 25000,
+    "categoria": "MEMORIAS",
+    "img": "https://source.unsplash.com/800x600/?usb+flash+drive"
+  }
+]
