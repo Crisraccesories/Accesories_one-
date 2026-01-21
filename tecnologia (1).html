@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tecnología | Accesories_one</title>
+  <meta name="description" content="Catálogo de tecnología: audífonos, smartwatch, parlantes, cargadores, cables y más." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles-tec.css" />
+</head>
+<body>
+  <header class="container">
+    <h1><a href="index.html" style="color:inherit;text-decoration:none">Accesories_one</a></h1>
+    <nav>
+      <a href="index.html#inicio">Inicio</a>
+      <a href="index.html#productos">Productos</a>
+      <a class="active" href="tecnologia.html">Tecnología</a>
+      <a href="index.html#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero-tech">
+    <div class="overlay">
+      <h2>Catálogo de Tecnología</h2>
+      <p>Audífonos, smartwatch, parlantes, cargadores, cables y más.</p>
+    </div>
+  </section>
+
+  <main class="container">
+    <section class="filtros">
+      <input type="search" id="q" placeholder="Buscar producto... (ej. AirPods, Smartwatch)" aria-label="Buscar producto" />
+      <select id="cat"></select>
+      <select id="orden">
+        <option value="relevancia">Ordenar: Relevancia</option>
+        <option value="precio_asc">Precio: menor a mayor</option>
+        <option value="precio_desc">Precio: mayor a menor</option>
+        <option value="nombre_asc">Nombre: A→Z</option>
+      </select>
+    </section>
+
+    <section id="gridTec" class="grid"></section>
+  </main>
+
+  <footer class="container">
+    <small>© <span id="anio"></span> Accesories_one</small>
+  </footer>
+
+  <script src="tecnologia.js" defer></script>
+</body>
+</html>
