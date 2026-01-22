@@ -1,0 +1,44 @@
+[
+  {
+    "titulo": "AirPods Pro (1.ª generación)",
+    "descripcion": "Auriculares in‑ear con cancelación activa de ruido y modo Transparencia. Estuche de carga inalámbrica. Ideal para iPhone.",
+    "slug": "apple-airpods-pro-1a-gen",
+    "imagen": "apple-airpods-pro-1a-gen.jpg",
+    "categoria": "Audio"
+  },
+  {
+    "titulo": "AirPods (3.ª generación) – Blanco",
+    "descripcion": "Auriculares con Personalized Spatial Audio y estuche de carga. Ajuste cómodo y batería para el día a día.",
+    "slug": "apple-airpods-3a-gen-blanco",
+    "imagen": "apple-airpods-3a-gen-blanco.jpg",
+    "categoria": "Audio"
+  },
+  {
+    "titulo": "AirPods estilo 3.ª gen – Negro (genérico)",
+    "descripcion": "Auriculares estilo AirPods 3 en color negro (genérico). Diseño liviano, conexión Bluetooth estable.",
+    "slug": "airpods-3a-gen-negro-generico",
+    "imagen": "airpods-3a-gen-negro-generico.jpg",
+    "categoria": "Audio"
+  },
+  {
+    "titulo": "Airdots Pro – Control táctil (Blanco)",
+    "descripcion": "Auriculares TWS con control táctil e IPX4. Estuche compacto para carga rápida.",
+    "slug": "airdots-pro-tactil-blanco",
+    "imagen": "airdots-pro-tactil-blanco.jpg",
+    "categoria": "Audio"
+  },
+  {
+    "titulo": "Redmi AirDots TWS – Tipo botón (Negro)",
+    "descripcion": "Auriculares TWS tipo botón, Bluetooth 5.x, estuche ultracompacto. Prácticos para uso diario.",
+    "slug": "redmi-airdots-tws-boton-negro",
+    "imagen": "redmi-airdots-tws-boton-negro.jpg",
+    "categoria": "Audio"
+  },
+  {
+    "titulo": "Cargador USB‑C 20W – Estilo Apple (Blanco)",
+    "descripcion": "Adaptador de corriente USB‑C de 20 W, diseño compacto. Carga rápida compatible con teléfonos y tablets.",
+    "slug": "cargador-usb-c-20w-apple-blanco",
+    "imagen": "cargador-usb-c-20w-apple-blanco.jpg",
+    "categoria": "Cargadores"
+  }
+]
