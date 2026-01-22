@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="es">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Accesorios y Tecnología — Ancol One</title>
+  <meta name="description" content="Tienda y servicios de tecnología: accesorios, gadgets, soporte técnico y soluciones para hogar y empresa. Envíos rápidos y atención confiable.">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Accesorios y Tecnología — Ancol One">
+  <meta property="og:description" content="Tienda y servicios de tecnología: accesorios, gadgets, soporte técnico y soluciones para hogar y empresa. Envíos rápidos y atención confiable.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tuusuario.github.io/ancol-one/">
+  <meta property="og:image" content="https://tuusuario.github.io/ancol-one/assets/images/og-image.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: { extend: {
+        fontFamily: { inter: ['Inter','system-ui','sans-serif'] },
+        colors: {
+          brand: {
+            50:'#eef7ff',100:'#d9ecff',200:'#b9dbff',300:'#8ec4ff',400:'#5ea6ff',
+            500:'#2b84ff',600:'#1866e6',700:'#174fb3',800:'#153f8a',900:'#142f62',950:'#0c1e3b'
+          },
+          ink: { 50:'#f8fafc',100:'#f1f5f9',200:'#e2e8f0',300:'#cbd5e1',400:'#94a3b8',500:'#64748b',600:'#475569',700:'#334155',800:'#1f2937',900:'#0f172a' }
+        }
+      } }
+    }
+  </script>
+
+  <!-- JSON-LD Organization -->
+  <script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Ancol One",
+    "url": "https://tuusuario.github.io/ancol-one",
+    "logo": "https://tuusuario.github.io/ancol-one/assets/icons/favicon.svg",
+    "sameAs": ["https://www.instagram.com/ancolone", "https://www.facebook.com/ancolone", "https://www.linkedin.com/company/ancolone"]
+  }</script>
+
+</head>
+<body class="font-inter text-ink-800 dark:bg-ink-900 dark:text-ink-100 antialiased">
+
+  <header class="sticky top-0 z-50 bg-white/80 dark:bg-ink-900/80 backdrop-blur border-b border-ink-200 dark:border-ink-800">
+    <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 items-center justify-between">
+        <a href="index.html" class="flex items-center gap-2 font-semibold text-brand-700 dark:text-brand-300">
+          <img src="assets/icons/favicon.svg" alt="Logo Ancol One" class="h-6 w-6">
+          <span>Ancol One</span>
+        </a>
+        <div class="flex items-center gap-2">
+          <button id="btnTheme" class="p-2 rounded hover:bg-ink-100 dark:hover:bg-ink-800" aria-label="Cambiar tema">🌙</button>
+          <button id="btnMenu" class="md:hidden p-2 rounded hover:bg-ink-100 dark:hover:bg-ink-800" aria-label="Abrir menú">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5M3.75 12h16.5M3.75 18.75h16.5" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <ul id="menu" class="hidden md:flex items-center gap-6 text-sm">
+        <li><a class="hover:text-brand-600 dark:hover:text-brand-300" href="productos.html">Productos</a></li>
+        <li><a class="hover:text-brand-600 dark:hover:text-brand-300" href="servicios.html">Servicios</a></li>
+        <li><a class="hover:text-brand-600 dark:hover:text-brand-300" href="nosotros.html">Nosotros</a></li>
+        <li><a class="hover:text-brand-600 dark:hover:text-brand-300" href="faq.html">FAQ</a></li>
+        <li><a class="hover:text-brand-600 dark:hover:text-brand-300" href="blog.html">Blog</a></li>
+        <li><a class="inline-flex items-center gap-2 rounded-lg bg-brand-600 px-3 py-2 font-medium text-white hover:bg-brand-700" href="contacto.html">Contactar</a></li>
+      </ul>
+      <ul id="menuMovil" class="md:hidden hidden flex-col gap-4 py-4 text-sm">
+        <li><a class="block px-2 py-2 hover:bg-ink-100 dark:hover:bg-ink-800 rounded" href="productos.html">Productos</a></li>
+        <li><a class="block px-2 py-2 hover:bg-ink-100 dark:hover:bg-ink-800 rounded" href="servicios.html">Servicios</a></li>
+        <li><a class="block px-2 py-2 hover:bg-ink-100 dark:hover:bg-ink-800 rounded" href="nosotros.html">Nosotros</a></li>
+        <li><a class="block px-2 py-2 hover:bg-ink-100 dark:hover:bg-ink-800 rounded" href="faq.html">FAQ</a></li>
+        <li><a class="block px-2 py-2 hover:bg-ink-100 dark:hover:bg-ink-800 rounded" href="blog.html">Blog</a></li>
+        <li><a class="block px-2 py-2 hover:bg-ink-100 dark:hover:bg-ink-800 rounded" href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+    <h1 class="text-3xl font-bold">Contacto</h1>
+    <div class="mt-8 grid lg:grid-cols-2 gap-12 items-start">
+      <div>
+        <p class="text-ink-600 dark:text-ink-300">Cuéntanos tus necesidades y te respondemos en menos de 24h.</p>
+        <div class="mt-6 space-y-3 text-ink-600 dark:text-ink-300 text-sm">
+          <p>📞 <a class="text-brand-700 dark:text-brand-300 hover:underline" href="https://wa.me/57XXXXXXXXXX" target="_blank" rel="noopener">WhatsApp</a></p>
+          <p>✉️ <a class="text-brand-700 dark:text-brand-300 hover:underline" href="mailto:contacto@ancolone.com">contacto@ancolone.com</a></p>
+        </div>
+      </div>
+      <form id="formContacto" class="rounded-2xl border border-ink-200 dark:border-ink-800 p-6 bg-white dark:bg-ink-900" action="https://formspree.io/f/xxxxxxxx" method="POST">
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-sm font-medium">Nombre</label>
+            <input required name="nombre" class="mt-1 w-full rounded-lg border-ink-300 dark:border-ink-700 bg-white dark:bg-ink-900" type="text" placeholder="Tu nombre">
+          </div>
+          <div>
+            <label class="block text-sm font-medium">Email</label>
+            <input required name="email" class="mt-1 w-full rounded-lg border-ink-300 dark:border-ink-700 bg-white dark:bg-ink-900" type="email" placeholder="tu@email.com">
+          </div>
+        </div>
+        <div class="mt-4">
+          <label class="block text-sm font-medium">Mensaje</label>
+          <textarea required name="mensaje" class="mt-1 w-full rounded-lg border-ink-300 dark:border-ink-700 bg-white dark:bg-ink-900" rows="5" placeholder="Cuéntanos brevemente tu necesidad"></textarea>
+        </div>
+        <div class="mt-4 flex items-center gap-2 text-xs text-ink-500">
+          <input id="acepto" type="checkbox" required class="rounded border-ink-300 dark:border-ink-700 text-brand-600 focus:ring-brand-500">
+          <label for="acepto">Acepto la <a href="politicas.html" class="text-brand-700 dark:text-brand-300 hover:underline">política de privacidad</a>.</label>
+        </div>
+        <button class="mt-6 inline-flex items-center justify-center rounded-lg bg-brand-600 px-5 py-3 text-white font-medium hover:bg-brand-700" type="submit">Enviar</button>
+        <p id="estadoForm" class="mt-3 text-sm"></p>
+      </form>
+    </div>
+  </main>
+
+  <footer class="border-t border-ink-200 dark:border-ink-800 py-10">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-sm text-ink-500">© <span id="anio"></span> Ancol One. Todos los derechos reservados.</p>
+      <div class="flex items-center gap-4 text-ink-500">
+        <a href="#" aria-label="Facebook" class="hover:text-brand-600 dark:hover:text-brand-300">FB</a>
+        <a href="#" aria-label="Instagram" class="hover:text-brand-600 dark:hover:text-brand-300">IG</a>
+        <a href="#" aria-label="LinkedIn" class="hover:text-brand-600 dark:hover:text-brand-300">IN</a>
+        <a href="politicas.html" class="hover:text-brand-600 dark:hover:text-brand-300">Políticas</a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="whatsFloat" class="fixed bottom-4 right-4 bg-emerald-600 hover:bg-emerald-700 text-white rounded-full w-12 h-12 shadow-lg flex items-center justify-center" aria-label="WhatsApp">🟢</button>
+  <script src="js/main.js"></script>
+</body>
+</html>
