@@ -17,3 +17,53 @@ html{ scroll-behavior: smooth; }
 .faq{ border-radius:1rem; border:1px solid #e2e8f0; padding:1.5rem; background:#fff; }
 .faq>summary{ list-style:none; cursor:pointer; font-weight:600; }
 :focus-visible{ outline:2px solid #2b84ff; outline-offset:2px; }
+
+
+/* === Catálogo: imágenes consistentes y textos controlados === */
+
+/* Evita que las imágenes se estiren o recorten feo */
+.product-card img{
+  width: 100%;
+  height: 220px;        /* ajusta a la altura de tu card */
+  object-fit: contain;  /* usa 'cover' si prefieres recorte uniforme */
+  background: #fff;     /* buen contraste para productos claros */
+}
+
+/* Clamp de 2 líneas para descripción */
+.line-clamp-2{
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Opcional: que el grid nunca pegue a los bordes en móviles */
+#gridProductos{
+  gap: 1.5rem;            /* separaciones más cómodas entre cards */
+}
+
+/* Chips activos/inactivos (ya tienes base, sumo micro-ajustes) */
+.f-chip{
+  cursor: pointer;
+  transition: background .2s ease, color .2s ease, border-color .2s ease;
+}
+.f-chip.active{
+  background: #2b84ff;      /* tu brand-600 */
+  color: #fff;
+  border-color: transparent;
+}
+
+/* Cards con borde y radio coherentes (complemento a tu .card) */
+.product-card{
+  border-radius: .75rem;
+  border: 1px solid #e2e8f0; /* ink-200 */
+  background: #fff;
+}
+@media (prefers-color-scheme: dark){
+  .product-card{
+    border-color: #0b1220;  /* ink-800 aproximado */
+    background: #0b1220;    /* fondo oscuro sutil */
+  }
+}
+
