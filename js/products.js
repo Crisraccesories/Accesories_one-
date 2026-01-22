@@ -1,73 +1,282 @@
-
 const DATA = [
-  { id:'p1', name:'Audífonos Bluetooth ANC', price:229900, cat:'audio', img:'assets/images/prod-audio1.svg' },
-  { id:'p2', name:'Parlante Portátil IPX7', price:189900, cat:'audio', img:'assets/images/prod-audio2.svg' },
-  { id:'p3', name:'Mouse Gamer 7200 DPI', price:129900, cat:'gaming', img:'assets/images/prod-gaming1.svg' },
-  { id:'p4', name:'Teclado Mecánico RGB', price:239900, cat:'gaming', img:'assets/images/prod-gaming2.svg' },
-  { id:'p5', name:'Router Wi‑Fi 6 Dual Band', price:289900, cat:'redes', img:'assets/images/prod-red1.svg' },
-  { id:'p6', name:'Extensor de Red Mesh', price:219900, cat:'redes', img:'assets/images/prod-red2.svg' },
-  { id:'p7', name:'Cargador Rápido 30W', price:79900,  cat:'accesorios', img:'assets/images/prod-acc1.svg' },
-  { id:'p8', name:'Cable USB‑C Trenzado', price:39900,  cat:'accesorios', img:'assets/images/prod-acc2.svg' }
-];
+  { id:'p001', name:'Manos Libres Tipo Samsung', price:10000, cat:'audio', img:'assets/images/productos/manos-libres-tipo-samsung.webp' },
+  { id:'p002', name:'Manos Libres Colores', price:12000, cat:'audio', img:'assets/images/productos/manos-libres-colores.webp' },
+  { id:'p003', name:'Manos Libres Huawei', price:10000, cat:'audio', img:'assets/images/productos/manos-libres-huawei.webp' },
+  { id:'p004', name:'Manos Libres G-01', price:15000, cat:'audio', img:'assets/images/productos/manos-libres-g-01.webp' },
+  { id:'p005', name:'Manos Libres Enjoy', price:10000, cat:'audio', img:'assets/images/productos/manos-libres-enjoy.webp' },
+  { id:'p006', name:'Manos Libres Xiaomi', price:15000, cat:'audio', img:'assets/images/productos/manos-libres-xiaomi.webp' },
+  { id:'p007', name:'Manos Libres AKG S8', price:12000, cat:'audio', img:'assets/images/productos/manos-libres-akg-s8.webp' },
+  { id:'p008', name:'Manos Libres AKG S10+', price:15000, cat:'audio', img:'assets/images/productos/manos-libres-akg-s10.webp' },
+  { id:'p009', name:'Manos Libres Tipo C', price:25000, cat:'audio', img:'assets/images/productos/manos-libres-tipo-c.webp' },
+  { id:'p010', name:'Manos Libres Tipo C Ramitech', price:30000, cat:'audio', img:'assets/images/productos/manos-libres-tipo-c-ramitech.webp' },
+  { id:'p011', name:'Manos Libres Skiny Chupa', price:15000, cat:'audio', img:'assets/images/productos/manos-libres-skiny-chupa.webp' },
+  { id:'p012', name:'Manos Libres Controltalk', price:12000, cat:'audio', img:'assets/images/productos/manos-libres-controltalk.webp' },
+  { id:'p013', name:'Manos Libres U19', price:10000, cat:'audio', img:'assets/images/productos/manos-libres-u19.webp' },
+  { id:'p014', name:'Manos Libres Yoyosmart', price:12000, cat:'audio', img:'assets/images/productos/manos-libres-yoyosmart.webp' },
+  { id:'p015', name:'Manos Libres Smart Plus', price:20000, cat:'audio', img:'assets/images/productos/manos-libres-smart-plus.webp' },
+  { id:'p016', name:'Manos Libres Global Metal 776', price:20000, cat:'audio', img:'assets/images/productos/manos-libres-global-metal-776.webp' },
+  { id:'p017', name:'Manos Libres J5', price:7000, cat:'audio', img:'assets/images/productos/manos-libres-j5.webp' },
+  { id:'p018', name:'Manos Libres S6', price:7000, cat:'audio', img:'assets/images/productos/manos-libres-s6.webp' },
+  { id:'p019', name:'Manos Libres Metal A16 Naisu', price:20000, cat:'audio', img:'assets/images/productos/manos-libres-metal-a16-naisu.webp' },
+  { id:'p020', name:'Manos Libres Acem', price:10000, cat:'audio', img:'assets/images/productos/manos-libres-acem.webp' },
+  { id:'p021', name:'Bluetooth Sport Amarillo', price:15000, cat:'audio', img:'assets/images/productos/bluetooth-sport-amarillo.webp' },
+  { id:'p022', name:'Bluetooth Sin Chupa', price:15000, cat:'audio', img:'assets/images/productos/bluetooth-sin-chupa.webp' },
+  { id:'p023', name:'I12 Economico', price:30000, cat:'audio', img:'assets/images/productos/i12-economico.webp' },
+  { id:'p024', name:'Inpods 12 SAG', price:35000, cat:'audio', img:'assets/images/productos/inpods-12-sag.webp' },
+  { id:'p025', name:'Audifonos Pro60', price:40000, cat:'audio', img:'assets/images/productos/audifonos-pro60.webp' },
+  { id:'p026', name:'Audifonos G35', price:55000, cat:'audio', img:'assets/images/productos/audifonos-g35.webp' },
+  { id:'p027', name:'Audifonos Harvic 543', price:35000, cat:'audio', img:'assets/images/productos/audifonos-harvic-543.webp' },
+  { id:'p028', name:'Airdots Botón', price:40000, cat:'audio', img:'assets/images/productos/airdots-boton.webp' },
+  { id:'p029', name:'AirdotsPro Tactil', price:45000, cat:'audio', img:'assets/images/productos/airdotspro-tactil.webp' },
+  { id:'p030', name:'M11 Power Bank', price:40000, cat:'powerbank', img:'assets/images/productos/m11-power-bank.webp' },
+  { id:'p031', name:'Audifonos Harvic 538', price:95000, cat:'audio', img:'assets/images/productos/audifonos-harvic-538.webp' },
+  { id:'p032', name:'Audifonos Harvic 539', price:78000, cat:'audio', img:'assets/images/productos/audifonos-harvic-539.webp' },
+  { id:'p033', name:'Audifonos Harvic 540', price:60000, cat:'audio', img:'assets/images/productos/audifonos-harvic-540.webp' },
+  { id:'p034', name:'Audifonos Harvic 545', price:55000, cat:'audio', img:'assets/images/productos/audifonos-harvic-545.webp' },
+  { id:'p035', name:'Pro 7S', price:60000, cat:'audio', img:'assets/images/productos/pro-7s.webp' },
+  { id:'p036', name:'Audifonos Disney', price:60000, cat:'audio', img:'assets/images/productos/audifonos-disney.webp' },
+  { id:'p037', name:'Audifonos JBL Wave 300', price:60000, cat:'audio', img:'assets/images/productos/audifonos-jbl-wave-300.webp' },
+  { id:'p038', name:'Audifonos JBL K13', price:60000, cat:'audio', img:'assets/images/productos/audifonos-jbl-k13.webp' },
+  { id:'p039', name:'Audifonos JBL K36', price:60000, cat:'audio', img:'assets/images/productos/audifonos-jbl-k36.webp' },
+  { id:'p040', name:'YX06 Tipo JBL', price:65000, cat:'audio', img:'assets/images/productos/yx06-tipo-jbl.webp' },
+  { id:'p041', name:'Audifonos F40 Karmabeo', price:65000, cat:'audio', img:'assets/images/productos/audifonos-f40-karmabeo.webp' },
+  { id:'p042', name:'F1 Labial', price:90000, cat:'audio', img:'assets/images/productos/f1-labial.webp' },
+  { id:'p043', name:'Earcuff G10 Karmabeo', price:110000, cat:'audio', img:'assets/images/productos/earcuff-g10-karmabeo.webp' },
+  { id:'p044', name:'Audifonos TWS E90', price:60000, cat:'audio', img:'assets/images/productos/audifonos-tws-e90.webp' },
+  { id:'p045', name:'Audifono Parlante 2 en 1', price:70000, cat:'audio', img:'assets/images/productos/audifono-parlante-2-en-1.webp' },
+  { id:'p046', name:'Audifonos TWS E89', price:60000, cat:'audio', img:'assets/images/productos/audifonos-tws-e89.webp' },
+  { id:'p047', name:'Audifono RAM-495BT', price:55000, cat:'audio', img:'assets/images/productos/audifono-ram-495bt.webp' },
+  { id:'p048', name:'Galaxy Buds Pro', price:75000, cat:'audio', img:'assets/images/productos/galaxy-buds-pro.webp' },
+  { id:'p049', name:'Samsung Buds +', price:75000, cat:'audio', img:'assets/images/productos/samsung-buds.webp' },
+  { id:'p050', name:'Galaxy Buds 2', price:75000, cat:'audio', img:'assets/images/productos/galaxy-buds-2.webp' },
+  { id:'p051', name:'Galaxy Buds 2 Pro', price:70000, cat:'audio', img:'assets/images/productos/galaxy-buds-2-pro.webp' },
+  { id:'p052', name:'Conducción Osea Samsung S9', price:40000, cat:'audio', img:'assets/images/productos/conduccion-osea-samsung-s9.webp' },
+  { id:'p053', name:'Conducción Osea Bose S7', price:40000, cat:'audio', img:'assets/images/productos/conduccion-osea-bose-s7.webp' },
+  { id:'p054', name:'Conducción Osea K8 Karmabeo', price:130000, cat:'audio', img:'assets/images/productos/conduccion-osea-k8-karmabeo.webp' },
+  { id:'p055', name:'Conducción Osea K9 Pro Sumergible', price:190000, cat:'audio', img:'assets/images/productos/conduccion-osea-k9-pro-sumergible.webp' },
+  { id:'p056', name:'Diadema Sony 450 AP- Cable', price:25000, cat:'audio', img:'assets/images/productos/diadema-sony-450-ap-cable.webp' },
+  { id:'p057', name:'Diadema Sony 450 BT', price:45000, cat:'audio', img:'assets/images/productos/diadema-sony-450-bt.webp' },
+  { id:'p058', name:'Diadema N65 Inalámbrica', price:35000, cat:'audio', img:'assets/images/productos/diadema-n65-inalambrica.webp' },
+  { id:'p059', name:'Diadema Gato Inalámbrica', price:35000, cat:'audio', img:'assets/images/productos/diadema-gato-inalambrica.webp' },
+  { id:'p060', name:'Diadema JBL Tune 650 BT', price:80000, cat:'audio', img:'assets/images/productos/diadema-jbl-tune-650-bt.webp' },
+  { id:'p061', name:'Diadema Gamer HP Computadora', price:70000, cat:'audio', img:'assets/images/productos/diadema-gamer-hp-computadora.webp' },
+  { id:'p062', name:'Diadema Bose Inalámbrica', price:80000, cat:'audio', img:'assets/images/productos/diadema-bose-inalambrica.webp' },
+  { id:'p063', name:'Diadema KR Max', price:80000, cat:'audio', img:'assets/images/productos/diadema-kr-max.webp' },
+  { id:'p064', name:'Cuellera RAM-KML12', price:40000, cat:'audio', img:'assets/images/productos/cuellera-ram-kml12.webp' },
+  { id:'p065', name:'Cuellera Naisu NA-06', price:50000, cat:'audio', img:'assets/images/productos/cuellera-naisu-na-06.webp' },
+  { id:'p066', name:'Cuellera X-BOM 1', price:50000, cat:'audio', img:'assets/images/productos/cuellera-x-bom-1.webp' },
+  { id:'p067', name:'Cuellera NT-ABS41', price:55000, cat:'audio', img:'assets/images/productos/cuellera-nt-abs41.webp' },
+  { id:'p068', name:'Cuellera RAM-BA241', price:55000, cat:'audio', img:'assets/images/productos/cuellera-ram-ba241.webp' },
+  { id:'p069', name:'Manos Libres iPhone Económicos', price:18000, cat:'accesorios', img:'assets/images/productos/manos-libres-iphone-economicos.webp' },
+  { id:'p070', name:'Manos Libres Conexión Directa 1.1 Original', price:60000, cat:'accesorios', img:'assets/images/productos/manos-libres-conexion-directa-1-1-original.webp' },
+  { id:'p071', name:'AirPods Serie 3 1.1', price:70000, cat:'accesorios', img:'assets/images/productos/airpods-serie-3-1-1.webp' },
+  { id:'p072', name:'AirPods Serie 3 Negro', price:60000, cat:'accesorios', img:'assets/images/productos/airpods-serie-3-negro.webp' },
+  { id:'p073', name:'AirPods Pro 1.1', price:80000, cat:'accesorios', img:'assets/images/productos/airpods-pro-1-1.webp' },
+  { id:'p074', name:'AirPods Pro 2 ANC', price:100000, cat:'accesorios', img:'assets/images/productos/airpods-pro-2-anc.webp' },
+  { id:'p075', name:'MagSafe iPhone', price:60000, cat:'accesorios', img:'assets/images/productos/magsafe-iphone.webp' },
+  { id:'p076', name:'Cargador Magnético iPhone', price:40000, cat:'accesorios', img:'assets/images/productos/cargador-magnetico-iphone.webp' },
+  { id:'p077', name:'Cargador 5W Completo', price:20000, cat:'accesorios', img:'assets/images/productos/cargador-5w-completo.webp' },
+  { id:'p078', name:'Cargador 20W Tipo Original', price:50000, cat:'accesorios', img:'assets/images/productos/cargador-20w-tipo-original.webp' },
+  { id:'p079', name:'Adaptador 20W', price:30000, cat:'accesorios', img:'assets/images/productos/adaptador-20w.webp' },
+  { id:'p080', name:'Adaptador 25W', price:40000, cat:'accesorios', img:'assets/images/productos/adaptador-25w.webp' },
+  { id:'p081', name:'Cable USB- iPhone', price:15000, cat:'accesorios', img:'assets/images/productos/cable-usb-iphone.webp' },
+  { id:'p082', name:'Cable Tipo C- IPH 1 Metro', price:20000, cat:'accesorios', img:'assets/images/productos/cable-tipo-c-iph-1-metro.webp' },
+  { id:'p083', name:'Cable Tipo C- IPH 2 Metros', price:30000, cat:'accesorios', img:'assets/images/productos/cable-tipo-c-iph-2-metros.webp' },
+  { id:'p084', name:'Cargador 25W Multipuerto', price:35000, cat:'accesorios', img:'assets/images/productos/cargador-25w-multipuerto.webp' },
+  { id:'p085', name:'Cargador 35W Multipuerto', price:35000, cat:'accesorios', img:'assets/images/productos/cargador-35w-multipuerto.webp' },
+  { id:'p086', name:'Banda M6', price:30000, cat:'smartwatch', img:'assets/images/productos/banda-m6.webp' },
+  { id:'p087', name:'Smart Band 7', price:35000, cat:'smartwatch', img:'assets/images/productos/smart-band-7.webp' },
+  { id:'p088', name:'Smartwatch T500 Doble Pulso', price:50000, cat:'smartwatch', img:'assets/images/productos/smartwatch-t500-doble-pulso.webp' },
+  { id:'p089', name:'Smartwatch X22 Pro Max (Serie 7)', price:110000, cat:'smartwatch', img:'assets/images/productos/smartwatch-x22-pro-max-serie-7.webp' },
+  { id:'p090', name:'TW18 Ultra Serie 8 Doble Pulso (45mm)', price:130000, cat:'smartwatch', img:'assets/images/productos/tw18-ultra-serie-8-doble-pulso-45mm.webp' },
+  { id:'p091', name:'Smartwatch HW3 Ultra Max', price:150000, cat:'smartwatch', img:'assets/images/productos/smartwatch-hw3-ultra-max.webp' },
+  { id:'p092', name:'Smartwatch Anita Dama IP68', price:250000, cat:'smartwatch', img:'assets/images/productos/smartwatch-anita-dama-ip68.webp' },
+  { id:'p093', name:'G-Tide R1 IP68 (6 meses garantía)', price:240000, cat:'smartwatch', img:'assets/images/productos/g-tide-r1-ip68-6-meses-garantia.webp' },
+  { id:'p094', name:'Smartwatch H4 Plus AMOLED', price:180000, cat:'smartwatch', img:'assets/images/productos/smartwatch-h4-plus-amoled.webp' },
+  { id:'p095', name:'Smartwatch H5 Plus AMOLED', price:180000, cat:'smartwatch', img:'assets/images/productos/smartwatch-h5-plus-amoled.webp' },
+  { id:'p096', name:'SK6 Mobulaa (IP67) 6 meses', price:150000, cat:'smartwatch', img:'assets/images/productos/sk6-mobulaa-ip67-6-meses.webp' },
+  { id:'p097', name:'SK5 Mobulaa (IP67) 6 meses', price:130000, cat:'smartwatch', img:'assets/images/productos/sk5-mobulaa-ip67-6-meses.webp' },
+  { id:'p098', name:'SK10 Mobulaa (IP67) 6 meses', price:170000, cat:'smartwatch', img:'assets/images/productos/sk10-mobulaa-ip67-6-meses.webp' },
+  { id:'p099', name:'Combo Reloj EW68 Ultra Max', price:90000, cat:'smartwatch', img:'assets/images/productos/combo-reloj-ew68-ultra-max.webp' },
+  { id:'p100', name:'Combo Reloj Ultra Y800', price:130000, cat:'smartwatch', img:'assets/images/productos/combo-reloj-ultra-y800.webp' },
+  { id:'p101', name:'R1 Goldman (Sumergible) 6 meses', price:250000, cat:'smartwatch', img:'assets/images/productos/r1-goldman-sumergible-6-meses.webp' },
+  { id:'p102', name:'Combo Teclado T13 Alambrico', price:30000, cat:'computo', img:'assets/images/productos/combo-teclado-t13-alambrico.webp' },
+  { id:'p103', name:'Combo Teclado Gamer Alambrico', price:45000, cat:'computo', img:'assets/images/productos/combo-teclado-gamer-alambrico.webp' },
+  { id:'p104', name:'Combo Dell Inalambrico', price:55000, cat:'computo', img:'assets/images/productos/combo-dell-inalambrico.webp' },
+  { id:'p105', name:'Combo BT 7000 Inalambrico', price:50000, cat:'computo', img:'assets/images/productos/combo-bt-7000-inalambrico.webp' },
+  { id:'p106', name:'Combo K03 Inalambrico BT', price:50000, cat:'computo', img:'assets/images/productos/combo-k03-inalambrico-bt.webp' },
+  { id:'p107', name:'Combo Teclado Colores Inalambrico BT', price:60000, cat:'computo', img:'assets/images/productos/combo-teclado-colores-inalambrico-bt.webp' },
+  { id:'p108', name:'Mini Teclado BT', price:50000, cat:'computo', img:'assets/images/productos/mini-teclado-bt.webp' },
+  { id:'p109', name:'Base Refrigerante N66', price:35000, cat:'computo', img:'assets/images/productos/base-refrigerante-n66.webp' },
+  { id:'p110', name:'Base Refrigerante 4 Ventiladores', price:65000, cat:'computo', img:'assets/images/productos/base-refrigerante-4-ventiladores.webp' },
+  { id:'p111', name:'Base Refrigerante SY-K2', price:60000, cat:'computo', img:'assets/images/productos/base-refrigerante-sy-k2.webp' },
+  { id:'p112', name:'Mouse Optico M1', price:15000, cat:'computo', img:'assets/images/productos/mouse-optico-m1.webp' },
+  { id:'p113', name:'Mouse Inalam Ramitech', price:50000, cat:'computo', img:'assets/images/productos/mouse-inalam-ramitech.webp' },
+  { id:'p114', name:'Mouse Nekar Inalambrico', price:25000, cat:'computo', img:'assets/images/productos/mouse-nekar-inalambrico.webp' },
+  { id:'p115', name:'Parlante HT-414 Ramitech', price:45000, cat:'audio', img:'assets/images/productos/parlante-ht-414-ramitech.webp' },
+  { id:'p116', name:'Parlante HN-88 Ramitech', price:35000, cat:'audio', img:'assets/images/productos/parlante-hn-88-ramitech.webp' },
+  { id:'p117', name:'Parlante F68', price:35000, cat:'audio', img:'assets/images/productos/parlante-f68.webp' },
+  { id:'p118', name:'Charge Mini 3+ JBL', price:35000, cat:'audio', img:'assets/images/productos/charge-mini-3-jbl.webp' },
+  { id:'p119', name:'Clip 4 JBL', price:35000, cat:'audio', img:'assets/images/productos/clip-4-jbl.webp' },
+  { id:'p120', name:'Flip Mini JBL', price:40000, cat:'audio', img:'assets/images/productos/flip-mini-jbl.webp' },
+  { id:'p121', name:'Parlante GO3 JBL', price:35000, cat:'audio', img:'assets/images/productos/parlante-go3-jbl.webp' },
+  { id:'p122', name:'Flip 6 JBL', price:70000, cat:'audio', img:'assets/images/productos/flip-6-jbl.webp' },
+  { id:'p123', name:'Parlante MG2', price:20000, cat:'audio', img:'assets/images/productos/parlante-mg2.webp' },
+  { id:'p124', name:'Parlante Karmabeo 1674', price:30000, cat:'audio', img:'assets/images/productos/parlante-karmabeo-1674.webp' },
+  { id:'p125', name:'Parlante Karmabeo 2634', price:35000, cat:'audio', img:'assets/images/productos/parlante-karmabeo-2634.webp' },
+  { id:'p126', name:'Parlante L33', price:60000, cat:'audio', img:'assets/images/productos/parlante-l33.webp' },
+  { id:'p127', name:'Parlante 138', price:50000, cat:'audio', img:'assets/images/productos/parlante-138.webp' },
+  { id:'p128', name:'Parlante Mini Z5', price:30000, cat:'audio', img:'assets/images/productos/parlante-mini-z5.webp' },
+  { id:'p129', name:'Boonsbox 3 JBL', price:50000, cat:'audio', img:'assets/images/productos/boonsbox-3-jbl.webp' },
+  { id:'p130', name:'Boombox 3 Pro JBL', price:120000, cat:'audio', img:'assets/images/productos/boombox-3-pro-jbl.webp' },
+  { id:'p131', name:'Parlante B20 JBL', price:65000, cat:'audio', img:'assets/images/productos/parlante-b20-jbl.webp' },
+  { id:'p132', name:'Parlante Charge6S JBL', price:60000, cat:'audio', img:'assets/images/productos/parlante-charge6s-jbl.webp' },
+  { id:'p133', name:'Booms Box 3 Mini JBL', price:60000, cat:'audio', img:'assets/images/productos/booms-box-3-mini-jbl.webp' },
+  { id:'p134', name:'Box3 Mini LED JBL', price:60000, cat:'audio', img:'assets/images/productos/box3-mini-led-jbl.webp' },
+  { id:'p135', name:'Parlante B27 JBL', price:90000, cat:'audio', img:'assets/images/productos/parlante-b27-jbl.webp' },
+  { id:'p136', name:'Boombox 3 JBL', price:220000, cat:'audio', img:'assets/images/productos/boombox-3-jbl.webp' },
+  { id:'p137', name:'Parlante NR-905', price:60000, cat:'audio', img:'assets/images/productos/parlante-nr-905.webp' },
+  { id:'p138', name:'Parlante Z6', price:80000, cat:'audio', img:'assets/images/productos/parlante-z6.webp' },
+  { id:'p139', name:'Parlante con Micrófono YS-207', price:175000, cat:'audio', img:'assets/images/productos/parlante-con-microfono-ys-207.webp' },
+  { id:'p140', name:'Parlante con Micrófono YS-224', price:175000, cat:'audio', img:'assets/images/productos/parlante-con-microfono-ys-224.webp' },
+  { id:'p141', name:'Parlante A8', price:90000, cat:'audio', img:'assets/images/productos/parlante-a8.webp' },
+  { id:'p142', name:'Parlante Hopestar', price:500000, cat:'audio', img:'assets/images/productos/parlante-hopestar.webp' },
+  { id:'p143', name:'Camara 3 Antenas', price:75000, cat:'accesorios', img:'assets/images/productos/camara-3-antenas.webp' },
+  { id:'p144', name:'TDT NIIA', price:60000, cat:'accesorios', img:'assets/images/productos/tdt-niia.webp' },
+  { id:'p145', name:'Cargador ATO Tipo V8', price:15000, cat:'cargadores', img:'assets/images/productos/cargador-ato-tipo-v8.webp' },
+  { id:'p146', name:'Cargador 0502 Tipo V8', price:12000, cat:'cargadores', img:'assets/images/productos/cargador-0502-tipo-v8.webp' },
+  { id:'p147', name:'Moto Turbo Tipo V8', price:15000, cat:'cargadores', img:'assets/images/productos/moto-turbo-tipo-v8.webp' },
+  { id:'p148', name:'Karmabeo Doble Puerto Tipo V8', price:15000, cat:'cargadores', img:'assets/images/productos/karmabeo-doble-puerto-tipo-v8.webp' },
+  { id:'p149', name:'Cargador Xion XN10 Tipo V8', price:18000, cat:'cargadores', img:'assets/images/productos/cargador-xion-xn10-tipo-v8.webp' },
+  { id:'p150', name:'Samsung Economico Tipo C', price:15000, cat:'cargadores', img:'assets/images/productos/samsung-economico-tipo-c.webp' },
+  { id:'p151', name:'Cargador ACEM Tipo C', price:20000, cat:'cargadores', img:'assets/images/productos/cargador-acem-tipo-c.webp' },
+  { id:'p152', name:'Cargador Huawei Tipo C', price:15000, cat:'cargadores', img:'assets/images/productos/cargador-huawei-tipo-c.webp' },
+  { id:'p153', name:'Xiaomi 20W Tipo C', price:20000, cat:'cargadores', img:'assets/images/productos/xiaomi-20w-tipo-c.webp' },
+  { id:'p154', name:'Cargador Samsung S-20 Tipo C', price:18000, cat:'cargadores', img:'assets/images/productos/cargador-samsung-s-20-tipo-c.webp' },
+  { id:'p155', name:'Samsung 25W Tipo C', price:25000, cat:'cargadores', img:'assets/images/productos/samsung-25w-tipo-c.webp' },
+  { id:'p156', name:'Samsung 35W Doble Puerto Tipo C', price:35000, cat:'cargadores', img:'assets/images/productos/samsung-35w-doble-puerto-tipo-c.webp' },
+  { id:'p157', name:'Moto Turbo Tipo C', price:17000, cat:'cargadores', img:'assets/images/productos/moto-turbo-tipo-c.webp' },
+  { id:'p158', name:'Karmabeo Tipo C Carga Rapida', price:25000, cat:'cargadores', img:'assets/images/productos/karmabeo-tipo-c-carga-rapida.webp' },
+  { id:'p159', name:'Adaptador Xion 4.1', price:15000, cat:'cargadores', img:'assets/images/productos/adaptador-xion-4-1.webp' },
+  { id:'p160', name:'Adaptador Harvic 3.4', price:20000, cat:'cargadores', img:'assets/images/productos/adaptador-harvic-3-4.webp' },
+  { id:'p161', name:'Joystick para Celular', price:30000, cat:'gaming', img:'assets/images/productos/joystick-para-celular.webp' },
+  { id:'p162', name:'Game Stick', price:120000, cat:'gaming', img:'assets/images/productos/game-stick.webp' },
+  { id:'p163', name:'Super Nintendo Classic Edition', price:230000, cat:'gaming', img:'assets/images/productos/super-nintendo-classic-edition.webp' },
+  { id:'p164', name:'Power Bank 5000 mAh 1Hora', price:40000, cat:'powerbank', img:'assets/images/productos/power-bank-5000-mah-1hora.webp' },
+  { id:'p165', name:'Power Bank 10000 mAh 1Hora', price:60000, cat:'powerbank', img:'assets/images/productos/power-bank-10000-mah-1hora.webp' },
+  { id:'p166', name:'Power Bank 20000 mAh 1Hora', price:90000, cat:'powerbank', img:'assets/images/productos/power-bank-20000-mah-1hora.webp' },
+  { id:'p167', name:'Power Bank 5000 mAh Ramitech', price:40000, cat:'powerbank', img:'assets/images/productos/power-bank-5000-mah-ramitech.webp' },
+  { id:'p168', name:'Power Bank 20000 mAh', price:100000, cat:'powerbank', img:'assets/images/productos/power-bank-20000-mah.webp' },
+  { id:'p169', name:'Adaptador Europeo', price:15000, cat:'accesorios', img:'assets/images/productos/adaptador-europeo.webp' },
+  { id:'p170', name:'Cargador de Pilas', price:30000, cat:'accesorios', img:'assets/images/productos/cargador-de-pilas.webp' },
+  { id:'p171', name:'Combo Nano Titanium', price:60000, cat:'belleza', img:'assets/images/productos/combo-nano-titanium.webp' },
+  { id:'p172', name:'Secador Parlux', price:110000, cat:'belleza', img:'assets/images/productos/secador-parlux.webp' },
+  { id:'p173', name:'Patillera VGR 096', price:55000, cat:'belleza', img:'assets/images/productos/patillera-vgr-096.webp' },
+  { id:'p174', name:'Patillera VGR 228 con Pantalla', price:60000, cat:'belleza', img:'assets/images/productos/patillera-vgr-228-con-pantalla.webp' },
+  { id:'p175', name:'Patillera Vintage T9', price:40000, cat:'belleza', img:'assets/images/productos/patillera-vintage-t9.webp' },
+  { id:'p176', name:'Combo VGR 677', price:150000, cat:'belleza', img:'assets/images/productos/combo-vgr-677.webp' },
+  { id:'p177', name:'Combo VGR 649 Shaver y Patillera', price:180000, cat:'belleza', img:'assets/images/productos/combo-vgr-649-shaver-y-patillera.webp' },
+  { id:'p178', name:'Cargador Carro NIXC-24 Carga Rapida', price:35000, cat:'vehiculos', img:'assets/images/productos/cargador-carro-nixc-24-carga-rapida.webp' },
+  { id:'p179', name:'Cargador Carro NIXC-7 Carga Rapida', price:27000, cat:'vehiculos', img:'assets/images/productos/cargador-carro-nixc-7-carga-rapida.webp' },
+  { id:'p180', name:'Cargador Carro YOYOS 3.1A', price:12000, cat:'vehiculos', img:'assets/images/productos/cargador-carro-yoyos-3-1a.webp' },
+  { id:'p181', name:'Cargador Carro PYP PH14 3.0', price:25000, cat:'vehiculos', img:'assets/images/productos/cargador-carro-pyp-ph14-3-0.webp' },
+  { id:'p182', name:'Cargador Carro PD40 18W 3.1', price:25000, cat:'vehiculos', img:'assets/images/productos/cargador-carro-pd40-18w-3-1.webp' },
+  { id:'p183', name:'Cargador Carro Karmabeo 25W', price:20000, cat:'vehiculos', img:'assets/images/productos/cargador-carro-karmabeo-25w.webp' },
+  { id:'p184', name:'Cargador Carro ZAHR', price:12000, cat:'vehiculos', img:'assets/images/productos/cargador-carro-zahr.webp' },
+  { id:'p185', name:'Bluetooth USB para Carro', price:15000, cat:'vehiculos', img:'assets/images/productos/bluetooth-usb-para-carro.webp' },
+  { id:'p186', name:'Bluetooth AUX para Carro', price:15000, cat:'vehiculos', img:'assets/images/productos/bluetooth-aux-para-carro.webp' },
+  { id:'p187', name:'Modulador Bluetooth GS-CB13 3.0', price:30000, cat:'vehiculos', img:'assets/images/productos/modulador-bluetooth-gs-cb13-3-0.webp' },
+  { id:'p188', name:'Modulador Bluetooth GS-M24 3.1', price:35000, cat:'vehiculos', img:'assets/images/productos/modulador-bluetooth-gs-m24-3-1.webp' },
+  { id:'p189', name:'Cargador Moto', price:15000, cat:'vehiculos', img:'assets/images/productos/cargador-moto.webp' },
+  { id:'p190', name:'Holder Araña Moto', price:15000, cat:'vehiculos', img:'assets/images/productos/holder-arana-moto.webp' },
+  { id:'p191', name:'Holder Moto MT01', price:15000, cat:'vehiculos', img:'assets/images/productos/holder-moto-mt01.webp' },
+  { id:'p192', name:'Soporte Celular Espejo Moto AC13', price:20000, cat:'vehiculos', img:'assets/images/productos/soporte-celular-espejo-moto-ac13.webp' },
+  { id:'p193', name:'Soporte Celular Manubrio Moto AC13', price:20000, cat:'vehiculos', img:'assets/images/productos/soporte-celular-manubrio-moto-ac13.webp' },
+  { id:'p194', name:'Soporte Celular Espejo Manubrio Yoyos', price:25000, cat:'vehiculos', img:'assets/images/productos/soporte-celular-espejo-manubrio-yoyos.webp' },
+  { id:'p195', name:'Bluetooth para Casco', price:80000, cat:'vehiculos', img:'assets/images/productos/bluetooth-para-casco.webp' },
+  { id:'p196', name:'Holder Retrovisor K533', price:15000, cat:'vehiculos', img:'assets/images/productos/holder-retrovisor-k533.webp' },
+  { id:'p197', name:'Holder Retrovisor Z-H03', price:15000, cat:'vehiculos', img:'assets/images/productos/holder-retrovisor-z-h03.webp' },
+  { id:'p198', name:'Holder Retrovisor 360°', price:25000, cat:'vehiculos', img:'assets/images/productos/holder-retrovisor-360.webp' },
+  { id:'p199', name:'Holder Rejilla Sencillo', price:5000, cat:'vehiculos', img:'assets/images/productos/holder-rejilla-sencillo.webp' },
+  { id:'p200', name:'Holder Rejilla Imán F23', price:20000, cat:'vehiculos', img:'assets/images/productos/holder-rejilla-iman-f23.webp' },
+  { id:'p201', name:'Holder Rejilla Imán F2', price:20000, cat:'vehiculos', img:'assets/images/productos/holder-rejilla-iman-f2.webp' },
+  { id:'p202', name:'Holder Portavasos', price:30000, cat:'vehiculos', img:'assets/images/productos/holder-portavasos.webp' },
+  { id:'p203', name:'Holder Millare/Vidrio XP363', price:30000, cat:'vehiculos', img:'assets/images/productos/holder-millare-vidrio-xp363.webp' },
+  { id:'p204', name:'Holder Cabecero para Tablet y Celular', price:30000, cat:'vehiculos', img:'assets/images/productos/holder-cabecero-para-tablet-y-celular.webp' },
+  { id:'p205', name:'Trípode Palo Selfie K07 con Bluetooth', price:25000, cat:'accesorios', img:'assets/images/productos/tripode-palo-selfie-k07-con-bluetooth.webp' },
+  { id:'p206', name:'Trípode Palo Selfie JC36 Flash con Bluetooth', price:40000, cat:'accesorios', img:'assets/images/productos/tripode-palo-selfie-jc36-flash-con-bluetooth.webp' },
+  { id:'p207', name:'Canguro Deportivo Nekar', price:15000, cat:'accesorios', img:'assets/images/productos/canguro-deportivo-nekar.webp' },
+  { id:'p208', name:'Soporte Celular para Escritorio', price:7000, cat:'accesorios', img:'assets/images/productos/soporte-celular-para-escritorio.webp' },
+  { id:'p209', name:'Soporte Celular para Escritorio (Metal)', price:10000, cat:'accesorios', img:'assets/images/productos/soporte-celular-para-escritorio-metal.webp' },
+  { id:'p210', name:'Soporte Tablet para Escritorio', price:35000, cat:'accesorios', img:'assets/images/productos/soporte-tablet-para-escritorio.webp' },
+  { id:'p211', name:'Termo 500ml', price:27000, cat:'accesorios', img:'assets/images/productos/termo-500ml.webp' },
+  { id:'p212', name:'Termo 300ml', price:25000, cat:'accesorios', img:'assets/images/productos/termo-300ml.webp' },
+  { id:'p213', name:'Termo 2500ml', price:25000, cat:'accesorios', img:'assets/images/productos/termo-2500ml.webp' },
+  { id:'p214', name:'Duo Termos Escandalosos', price:30000, cat:'accesorios', img:'assets/images/productos/duo-termos-escandalosos.webp' },
+  { id:'p215', name:'Duo Termos Dos Colores', price:30000, cat:'accesorios', img:'assets/images/productos/duo-termos-dos-colores.webp' },
+  { id:'p216', name:'Duo Termos Tres Colores', price:30000, cat:'accesorios', img:'assets/images/productos/duo-termos-tres-colores.webp' },
+  { id:'p217', name:'Quita Motas Eléctrico', price:25000, cat:'accesorios', img:'assets/images/productos/quita-motas-electrico.webp' },
+  { id:'p218', name:'Sombrilla Sencilla', price:15000, cat:'accesorios', img:'assets/images/productos/sombrilla-sencilla.webp' },
+  { id:'p219', name:'Sombrilla Doble Automática', price:25000, cat:'accesorios', img:'assets/images/productos/sombrilla-doble-automatica.webp' },
+  { id:'p220', name:'Sombrilla Grande Doble Automática', price:35000, cat:'accesorios', img:'assets/images/productos/sombrilla-grande-doble-automatica.webp' },
+  { id:'p221', name:'Cable Harvic Tipo V8', price:10000, cat:'cables', img:'assets/images/productos/cable-harvic-tipo-v8.webp' },
+  { id:'p222', name:'Cable Harvic Tipo C', price:10000, cat:'cables', img:'assets/images/productos/cable-harvic-tipo-c.webp' },
+  { id:'p223', name:'Cable Harvic Tipo iPhone', price:12000, cat:'cables', img:'assets/images/productos/cable-harvic-tipo-iphone.webp' },
+  { id:'p224', name:'Cable USB-V8 Skinny', price:5000, cat:'cables', img:'assets/images/productos/cable-usb-v8-skinny.webp' },
+  { id:'p225', name:'Cable USB-TC Skinny', price:8000, cat:'cables', img:'assets/images/productos/cable-usb-tc-skinny.webp' },
+  { id:'p226', name:'Cable V8 Karmabeo', price:10000, cat:'cables', img:'assets/images/productos/cable-v8-karmabeo.webp' },
+  { id:'p227', name:'Cable TC Karmabeo', price:10000, cat:'cables', img:'assets/images/productos/cable-tc-karmabeo.webp' },
+  { id:'p228', name:'Cable TC-TC ACEM Carga Rápida', price:20000, cat:'cables', img:'assets/images/productos/cable-tc-tc-acem-carga-rapida.webp' },
+  { id:'p229', name:'Cable Zara USB-TC 2 Metros', price:15000, cat:'cables', img:'assets/images/productos/cable-zara-usb-tc-2-metros.webp' },
+  { id:'p230', name:'Cable USB-TC PYP Carga Rápida', price:15000, cat:'cables', img:'assets/images/productos/cable-usb-tc-pyp-carga-rapida.webp' },
+  { id:'p231', name:'Cable USB-IPH 2 Metros LDNIO', price:15000, cat:'cables', img:'assets/images/productos/cable-usb-iph-2-metros-ldnio.webp' },
+  { id:'p232', name:'Cable USB-IPH Nekar', price:15000, cat:'cables', img:'assets/images/productos/cable-usb-iph-nekar.webp' },
+  { id:'p233', name:'Cable AUX 1A1 Microf', price:7000, cat:'cables', img:'assets/images/productos/cable-aux-1a1-microf.webp' },
+  { id:'p234', name:'Cable 1A1', price:5000, cat:'cables', img:'assets/images/productos/cable-1a1.webp' },
+  { id:'p235', name:'Cable 3 en 1 Power Conect', price:15000, cat:'cables', img:'assets/images/productos/cable-3-en-1-power-conect.webp' },
+  { id:'p236', name:'Cable 3 en 1 Power Conect Magnético', price:15000, cat:'cables', img:'assets/images/productos/cable-3-en-1-power-conect-magnetico.webp' },
+  { id:'p237', name:'Cable 3 en 1 Magnético LED', price:12000, cat:'cables', img:'assets/images/productos/cable-3-en-1-magnetico-led.webp' },
+  { id:'p238', name:'Cable AUX -104 3.5AA iPhone & TC', price:20000, cat:'cables', img:'assets/images/productos/cable-aux-104-3-5aa-iphone-tc.webp' },
+  { id:'p239', name:'Cable AUX-104 PYP Triestéreo', price:10000, cat:'cables', img:'assets/images/productos/cable-aux-104-pyp-triestereo.webp' },
+  { id:'p240', name:'Cable Audio 3A1', price:5000, cat:'cables', img:'assets/images/productos/cable-audio-3a1.webp' },
+  { id:'p241', name:'Cable Audio 3A3', price:5000, cat:'cables', img:'assets/images/productos/cable-audio-3a3.webp' },
+  { id:'p242', name:'Vidrio 5D', price:8000, cat:'accesorios', img:'assets/images/productos/vidrio-5d.webp' },
+  { id:'p243', name:'Protector Transparente AirPods S2-3 y Pro', price:15000, cat:'accesorios', img:'assets/images/productos/protector-transparente-airpods-s2-3-y-pro.webp' },
+  { id:'p244', name:'Protector Siliconado AirPods Serie 2', price:18000, cat:'accesorios', img:'assets/images/productos/protector-siliconado-airpods-serie-2.webp' },
+  { id:'p245', name:'Protector Siliconado AirPods Serie 3', price:18000, cat:'accesorios', img:'assets/images/productos/protector-siliconado-airpods-serie-3.webp' },
+  { id:'p246', name:'Protector Siliconado AirPods Pro 1.1', price:18000, cat:'accesorios', img:'assets/images/productos/protector-siliconado-airpods-pro-1-1.webp' },
+  { id:'p247', name:'Protector Silicon Case AirPods Pro 2', price:20000, cat:'accesorios', img:'assets/images/productos/protector-silicon-case-airpods-pro-2.webp' },
+  { id:'p248', name:'Protector Cargador iPhone', price:20000, cat:'accesorios', img:'assets/images/productos/protector-cargador-iphone.webp' },
+  { id:'p249', name:'Protector Cargador iPhone Transparente', price:20000, cat:'accesorios', img:'assets/images/productos/protector-cargador-iphone-transparente.webp' },
+  { id:'p250', name:'Protector Espiral para Cables', price:8000, cat:'accesorios', img:'assets/images/productos/protector-espiral-para-cables.webp' },
+  { id:'p251', name:'Pulso Nylon para Smartwatch', price:20000, cat:'smartwatch', img:'assets/images/productos/pulso-nylon-para-smartwatch.webp' },
+  { id:'p252', name:'Micro SD 8GB', price:12500, cat:'memorias', img:'assets/images/productos/micro-sd-8gb.webp' },
+  { id:'p253', name:'Micro SD 16GB', price:17000, cat:'memorias', img:'assets/images/productos/micro-sd-16gb.webp' },
+  { id:'p254', name:'Micro SD 32GB', price:22000, cat:'memorias', img:'assets/images/productos/micro-sd-32gb.webp' },
+  { id:'p255', name:'Micro SD 64GB', price:38000, cat:'memorias', img:'assets/images/productos/micro-sd-64gb.webp' },
+  { id:'p256', name:'Memoria USB 8GB', price:12500, cat:'memorias', img:'assets/images/productos/memoria-usb-8gb.webp' },
+  { id:'p257', name:'Memoria USB 16GB', price:18000, cat:'memorias', img:'assets/images/productos/memoria-usb-16gb.webp' },
+  { id:'p258', name:'Memoria USB 32GB', price:22000, cat:'memorias', img:'assets/images/productos/memoria-usb-32gb.webp' },
+  { id:'p259', name:'Memoria USB 64GB', price:38000, cat:'memorias', img:'assets/images/productos/memoria-usb-64gb.webp' },
+  { id:'p260', name:'Pila AA Recargable', price:25000, cat:'accesorios', img:'assets/images/productos/pila-aa-recargable.webp' },
+  { id:'p261', name:'Pila AAA Recargable', price:25000, cat:'accesorios', img:'assets/images/productos/pila-aaa-recargable.webp' },
+]
 
-function currency(v){ return new Intl.NumberFormat('es-CO', {style:'currency',currency:'COP', maximumFractionDigits:0}).format(v); }
-
-function card(p){
-  const msg = encodeURIComponent(`Hola, quiero el producto ${p.name} (${p.id}).`);
-  return `
+function currency(v){ return new Intl.NumberFormat('es-CO',{style:'currency',currency:'COP',maximumFractionDigits:0}).format(v);}
+function card(p){ const msg=encodeURIComponent(`Hola, quiero el producto ${p.name} (${p.id}).`); return `
   <article class="card" data-cat="${p.cat}">
     <img src="${p.img}" alt="${p.name}" class="w-full aspect-[4/3] object-cover rounded-lg border border-ink-200 dark:border-ink-700"/>
     <h3 class="mt-3 font-semibold">${p.name}</h3>
     <p class="text-sm text-ink-500">${p.cat.toUpperCase()}</p>
     <p class="mt-1 text-lg font-bold">${currency(p.price)}</p>
     <div class="mt-3 flex gap-2">
-      <a class="inline-flex items-center justify-center rounded-lg bg-brand-600 px-4 py-2 text-white text-sm hover:bg-brand-700" href="https://wa.me/57XXXXXXXXXX?text=${msg}" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+      <a class="inline-flex items-center justify-center rounded-lg bg-brand-600 px-4 py-2 text-white text-sm hover:bg-brand-700" href="https://wa.me/573133067667?text=\${msg}" target="_blank" rel="noopener">Pedir por WhatsApp</a>
       <button class="inline-flex items-center justify-center rounded-lg border border-ink-300 dark:border-ink-700 px-4 py-2 text-sm hover:bg-ink-50 dark:hover:bg-ink-800" onclick="copyRef('${p.id}')">Copiar ref.</button>
     </div>
-  </article>`;
-}
-
-function render(list){
-  const grid = document.getElementById('gridProductos');
-  if (!grid) return;
-  grid.innerHTML = list.map(card).join('');
-}
-
-function filter(cat){
-  if (cat==='all') return render(DATA);
-  render(DATA.filter(p=>p.cat===cat));
-}
-
-function search(q){
-  const s = (q||'').toLowerCase();
-  const list = DATA.filter(p => p.name.toLowerCase().includes(s));
-  render(list);
-}
-
-function copyRef(id){
-  navigator.clipboard.writeText(id).then(()=> alert('Referencia copiada: '+id));
-}
-
-// Home destacados
-(function(){
-  const home = document.getElementById('destacados');
-  if(home){ home.innerHTML = DATA.slice(0,4).map(card).join(''); }
-})();
-
-// Página productos
-window.addEventListener('DOMContentLoaded', ()=>{
-  const grid = document.getElementById('gridProductos');
-  if(!grid) return;
-  render(DATA);
-  // Filtros
-  document.querySelectorAll('.f-chip').forEach(b=>{
-    b.addEventListener('click', ()=>{
-      document.querySelectorAll('.f-chip').forEach(x=>x.classList.remove('active'));
-      b.classList.add('active');
-      filter(b.dataset.filter);
-    })
-  });
-  // Buscador
-  const busc = document.getElementById('buscador');
-  if (busc){ busc.addEventListener('input', ()=> search(busc.value)); }
-});
+  </article>`;}
+function render(list){ const grid=document.getElementById('gridProductos'); if(!grid) return; grid.innerHTML=list.map(card).join(''); }
+function filter(cat){ if(cat==='all') return render(DATA); render(DATA.filter(p=>p.cat===cat)); }
+function search(q){ const s=(q||'').toLowerCase(); render(DATA.filter(p=>p.name.toLowerCase().includes(s))); }
+function copyRef(id){ navigator.clipboard.writeText(id).then(()=>alert('Referencia copiada: '+id)); }
+(function(){ const home=document.getElementById('destacados'); if(home){ home.innerHTML=DATA.slice(0,4).map(card).join(''); }})();
+window.addEventListener('DOMContentLoaded',()=>{ const grid=document.getElementById('gridProductos'); if(!grid) return; render(DATA); document.querySelectorAll('.f-chip').forEach(b=>{ b.addEventListener('click', ()=>{ document.querySelectorAll('.f-chip').forEach(x=>x.classList.remove('active')); b.classList.add('active'); filter(b.dataset.filter); }); }); const busc=document.getElementById('buscador'); if(busc){ busc.addEventListener('input', ()=>search(busc.value)); } });
