@@ -1,0 +1,9 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'>
+  <rect width='800' height='600' fill='#f1f5f9'/>
+  <g stroke='#2b84ff' stroke-width='6' opacity='0.4' fill='none'>
+    <circle cx='220' cy='220' r='80'/>
+    <circle cx='580' cy='380' r='110'/>
+    <line x1='220' y1='220' x2='580' y2='380'/>
+  </g>
+  <text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Inter, sans-serif' font-size='40' fill='#174fb3'>Redes</text>
+</svg>
