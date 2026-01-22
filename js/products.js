@@ -1,14 +1,11 @@
-
-<script>
 // ==========================
-// CONFIG
+// CONFIG (GitHub Pages)
 // ==========================
-const BASE  = '/Accesories-one';  // GitHub Pages, carpeta del repo
+const BASE  = '/Accesories-one';
 const LOTES = [
   '/prueba_lote/productos_prueba.json',
   '/lote_01/productos_lote_01.json'
 ];
-
 const IMG_BASES = {
   'prueba_lote': `${BASE}/prueba_lote/images/`,
   'lote_01'    : `${BASE}/lote_01/images/`
@@ -26,10 +23,9 @@ async function cargarProductos() {
 
   const listas = await Promise.all(LOTES.map(fetchJson));
   const all = [];
-
   for (let i = 0; i < LOTES.length; i++) {
-    const folder  = LOTES[i].split('/')[1];              // 'prueba_lote' o 'lote_01'
-    const imgBase = IMG_BASES[folder] || `${BASE}/prueba_lote/images/`;
+    const folder  = LOTES[i].split('/')[1]; // 'prueba_lote' o 'lote_01'
+    const imgBase = IMG_BASES[folder];
     const items   = listas[i].map(p => ({ ...p, _imgBase: imgBase }));
     all.push(...items);
   }
@@ -62,7 +58,6 @@ function renderProductos(items) {
 // ==========================
 // BÚSQUEDA / FILTROS (opcional)
 // ==========================
-// Si ya tenías buscador y chips, reactívalos aquí:
 function wireUpFilters(data){
   const chips = document.querySelectorAll('.f-chip');
   const input = document.getElementById('buscador');
@@ -102,13 +97,11 @@ function wireUpFilters(data){
 }
 
 // ==========================
-// BOOT
+// BOOT (espera al DOM)
 // ==========================
-cargarProductos()
-  .then(items => {
-    renderProductos(items);
-    // Activa si tienes buscador/filtros en tu HTML:
-    wireUpFilters(items);
-  })
-  .catch(err => console.error('[Catalog] Error:', err));
-</script>
+document.addEventListener('DOMContentLoaded', () => {
+  console.log('[Catalog] multilote ON', new Date().toISOString());
+  cargarProductos()
+    .then(items => { renderProductos(items); wireUpFilters(items); })
+    .catch(err => console.error('[Catalog] Error:', err));
+});
