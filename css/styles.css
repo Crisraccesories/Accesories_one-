@@ -1,35 +1,111 @@
-
+/* =============================
+   PALETA + RESET
+   ============================= */
 :root{ color-scheme: light dark; }
 html{ scroll-behavior: smooth; }
 *{ box-sizing: border-box; }
-.f-chip{ border-radius:9999px; border:1px solid #cbd5e1; padding:.25rem .75rem; font-size:.875rem; }
-@media (prefers-color-scheme: dark){ .f-chip{ border-color:#334155; } }
-.f-chip.active{ background:#2b84ff; color:#fff; border-color:transparent; }
-.card{ border-radius:1rem; border:1px solid #e2e8f0; padding:1.5rem; background:#fff; }
-@media (prefers-color-scheme: dark){ .card{ border-color:#1f2937; background:#0b1220; } }
-.list{ margin-top:.75rem; color:#475569; font-size:.875rem; padding-left:1.25rem; }
-@media (prefers-color-scheme: dark){ .list{ color:#cbd5e1; } }
-.plan{ border-radius:1rem; border:1px solid #e2e8f0; padding:1.5rem; background:#fff; display:flex; flex-direction:column; }
-@media (prefers-color-scheme: dark){ .plan{ border-color:#1f2937; background:#0b1220; } }
-.plan .price{ font-size:1.5rem; font-weight:800; margin-top:.5rem; }
-.plan .btn{ margin-top:1rem; display:inline-flex; align-items:center; justify-content:center; border-radius:.5rem; background:#2b84ff; color:#fff; padding:.5rem 1rem; }
-.plan.highlight{ box-shadow:0 0 0 2px #2b84ff inset; }
-.faq{ border-radius:1rem; border:1px solid #e2e8f0; padding:1.5rem; background:#fff; }
-.faq>summary{ list-style:none; cursor:pointer; font-weight:600; }
-:focus-visible{ outline:2px solid #2b84ff; outline-offset:2px; }
 
-
-/* === Catálogo: imágenes consistentes y textos controlados === */
-
-/* Evita que las imágenes se estiren o recorten feo */
-.product-card img{
-  width: 100%;
-  height: 220px;        /* ajusta a la altura de tu card */
-  object-fit: contain;  /* usa 'cover' si prefieres recorte uniforme */
-  background: #fff;     /* buen contraste para productos claros */
+/* =============================
+   CHIPS DE FILTRO
+   ============================= */
+.f-chip{
+  border-radius:9999px;
+  border:1px solid #cbd5e1;
+  padding:.25rem .75rem;
+  font-size:.875rem;
+  cursor: pointer;
+  transition: background .2s ease, color .2s ease, border-color .2s ease;
+}
+@media (prefers-color-scheme: dark){
+  .f-chip{ border-color:#334155; }
+}
+.f-chip.active{
+  background:#2b84ff;
+  color:#fff;
+  border-color:transparent;
 }
 
-/* Clamp de 2 líneas para descripción */
+/* =============================
+   CARDS GENERALES (planes, FAQ)
+   ============================= */
+.card{
+  border-radius:1rem;
+  border:1px solid #e2e8f0;
+  padding:1.5rem;
+  background:#fff;
+}
+@media (prefers-color-scheme: dark){
+  .card{ border-color:#1f2937; background:#0b1220; }
+}
+
+.list{
+  margin-top:.75rem;
+  color:#475569;
+  font-size:.875rem;
+  padding-left:1.25rem;
+}
+@media (prefers-color-scheme: dark){
+  .list{ color:#cbd5e1; }
+}
+
+.plan{
+  border-radius:1rem;
+  border:1px solid #e2e8f0;
+  padding:1.5rem;
+  background:#fff;
+  display:flex;
+  flex-direction:column;
+}
+@media (prefers-color-scheme: dark){
+  .plan{ border-color:#1f2937; background:#0b1220; }
+}
+.plan .price{
+  font-size:1.5rem;
+  font-weight:800;
+  margin-top:.5rem;
+}
+.plan .btn{
+  margin-top:1rem;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:.5rem;
+  background:#2b84ff;
+  color:#fff;
+  padding:.5rem 1rem;
+}
+.plan.highlight{ box-shadow:0 0 0 2px #2b84ff inset; }
+
+.faq{
+  border-radius:1rem;
+  border:1px solid #e2e8f0;
+  padding:1.5rem;
+  background:#fff;
+}
+.faq > summary{
+  list-style:none;
+  cursor:pointer;
+  font-weight:600;
+}
+
+:focus-visible{
+  outline:2px solid #2b84ff;
+  outline-offset:2px;
+}
+
+/* =============================
+   CATÁLOGO - CONFIGURACIÓN DE PRODUCTOS
+   ============================= */
+
+/* Imágenes sin deformarse */
+.product-card img{
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  background: #fff;
+}
+
+/* Clamp de 2 líneas */
 .line-clamp-2{
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -38,32 +114,20 @@ html{ scroll-behavior: smooth; }
   overflow: hidden;
 }
 
-/* Opcional: que el grid nunca pegue a los bordes en móviles */
+/* Separación del grid */
 #gridProductos{
-  gap: 1.5rem;            /* separaciones más cómodas entre cards */
+  gap: 1.5rem;
 }
 
-/* Chips activos/inactivos (ya tienes base, sumo micro-ajustes) */
-.f-chip{
-  cursor: pointer;
-  transition: background .2s ease, color .2s ease, border-color .2s ease;
-}
-.f-chip.active{
-  background: #2b84ff;      /* tu brand-600 */
-  color: #fff;
-  border-color: transparent;
-}
-
-/* Cards con borde y radio coherentes (complemento a tu .card) */
+/* Card del producto */
 .product-card{
   border-radius: .75rem;
-  border: 1px solid #e2e8f0; /* ink-200 */
+  border: 1px solid #e2e8f0;
   background: #fff;
 }
 @media (prefers-color-scheme: dark){
   .product-card{
-    border-color: #0b1220;  /* ink-800 aproximado */
-    background: #0b1220;    /* fondo oscuro sutil */
+    border-color: #0b1220;
+    background: #0b1220;
   }
 }
-
