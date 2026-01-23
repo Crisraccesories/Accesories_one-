@@ -7,8 +7,9 @@
   <title>Accesorios y Tecnología — Ancol One</title>
   <meta name="description" content="Tienda y servicios de tecnología: accesorios, gadgets, soporte técnico y soluciones para hogar y empresa. Envíos rápidos y atención confiable.">
 
-  <!-- (Opcional) Quita temporalmente el favicon que da 404 o cámbialo a un PNG existente -->
-  <!-- assets/icons/favicon.svg -->
+  <!-- Favicon (temporalmente deshabilitado porque daba 404)
+  assets/icons/favicon.svg
+  -->
 
   <!-- Open Graph -->
   <meta property="og:title" content="Accesorios y Tecnología — Ancol One">
@@ -17,6 +18,7 @@
   <meta property="og:url" content="https://tuusuario.github.io/ancol-one/">
   <meta property="og:image" content="https://tuusuario.github.io/ancol-one/assets/images/og-image.png">
 
+  <!-- Fuentes + CSS -->
   https://fonts.googleapis.com
   https://fonts.gstatic.com
   https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap
@@ -44,10 +46,31 @@
     "name": "Ancol One",
     "url": "https://tuusuario.github.io/ancol-one",
     "logo": "https://tuusuario.github.io/ancol-one/assets/icons/favicon.svg",
-    "sameAs": ["https://www.instagram.com/ancolone", "https://www.facebook.com/ancolone", "https://www.linkedin.com/company/ancolone"]
+    "sameAs": [
+      "https://www.instagram.com/ancolone",
+      "https://www.facebook.com/ancolone",
+      "https://www.linkedin.com/company/ancolone"
+    ]
   }</script>
 
-  <!-- JSON-Lnav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">  <!-- JSON-LD Website -->
+  <!-- JSON-LD Website -->
+  <script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Ancol One",
+    "url": "https://tuusuario.github.io/ancol-one/productos.html",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://tuusuario.github.io/ancol-one/productos.html?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }</script>
+</head>
+<body class="font-inter text-ink-800 dark:bg-ink-900 dark:text-ink-100 antialiased">
+
+  <!-- HEADER -->
+  <header class="sticky top-0 z-50 bg-white/80 dark:bg-ink-900/80 backdrop-blur border-b border-ink-200 dark:border-ink-800">
+    <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="flex h-16 items-center justify-between">
         index.html
           assets/icons/favicon.svg
@@ -65,20 +88,25 @@
 
       <ul id="menu" class="hidden md:flex items-center gap-6 text-sm">
         <li>productos.htmlProductos</a></li>
-        <li><a class="hover:text-brand-600 dark:hover:text-brands.htmlNosotros</a></li>
+        <li>servicios.htmlServicios</a></li>
+        <li>nosotros.htmlNosotros</a></li>
         <li>faq.htmlFAQ</a></li>
         <li>blog.htmlBlog</a></li>
-        <li><a class="inline-flex items-center gap-2 rounded-lg bg-brand-600 px-3 py-2 font-medium text-white hover:bg-brand-700" href>
+        <li>contacto.htmlContactar</a></li>
+      </ul>
+
+      <ul id="menuMovil" class="md:hidden hidden flex-col gap-4 py-4 text-sm">
         <li>productos.htmlProductos</a></li>
         <li>servicios.htmlServicios</a></li>
-        <li><a class="blocksotros</a></li>
-        <li>faq.htmlFAQ</a></li>
+        <li>nosotros.htmlNosotros</a></li>
+        <li><a class="block px->
         <li>blog.htmlBlog</a></li>
-        <li><a class="block px-2 py-2</li>
+        <li>contacto.htmlContacto</a></li>
       </ul>
     </nav>
   </header>
 
+  <!-- MAIN -->
   <main class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
     <h1 class="text-3xl font-bold">Productos</h1>
     <p class="mt-2 text-ink-600 dark:text-ink-300">Explora nuestro catálogo de accesorios y tecnología.</p>
@@ -97,37 +125,19 @@
     <div id="gridProductos" class="mt-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-6"></div>
   </main>
 
+  <!-- FOOTER -->
   <footer class="border-t border-ink-200 dark:border-ink-800 py-10">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
       <p class="text-sm text-ink-500">© <span id="anio"></span> Ancol One. Todos los derechos reservados.</p>
       <div class="flex items-center gap-4 text-ink-500">
         #FB</a>
-        #IG</a>
-        #IN</a>
-        <oliticas.htmlPolíticas</a>
+        <a href="#" aria-label="Instagram"liticas.htmlPolíticas</a>
       </div>
     </div>
   </footer>
 
   <!-- Scripts (orden correcto) -->
-  js/main.js</script>
-  js/products.js?v=20260122d</script>
+  <script src="jsipt>
+  js/products.js?v=20260122f</script>
 </body>
 </html>
-  <script type="application/ld+json">{
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Ancol One",
-    "url": "https://tuusuario.github.io/ancol-one/productos.html",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://tuusuario.github.io/ancol-one/productos.html?q={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
-  }</script>
-</head>
-<body class="font-inter text-ink-800 dark:bg-ink-900 dark:text-ink-100 antialiased">
-
-  <header class="sticky top-0 z-50 bg-white/80 dark:bg-ink-900/80 backdrop-blur border-b border-ink-200 dark:border-ink-800">
-
-js/products.js?v=20260122f</script>
