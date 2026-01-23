@@ -13,7 +13,7 @@ const IMG_BASES = {
 };
 
 // ==========================
-// CARGA MULTILOTE (V2)
+// CARGA MULTILOTE (DOM-safe)
 // ==========================
 async function cargarProductosV2() {
   const fetchJson = (url) =>
@@ -34,26 +34,46 @@ async function cargarProductosV2() {
 }
 
 // ==========================
-// RENDER (V2 con <img> garantizado)
+// RENDER con createElement (imposible que se “escape” como texto)
 // ==========================
 function renderProductosV2(items) {
   const grid = document.getElementById('gridProductos');
   if (!grid) return;
 
-  grid.innerHTML = items.map(item => `
-    <article class="product-card rounded-lg border border-ink-200 dark:border-ink-800 p-3 flex flex-col">
-      <div class="aspect-[4/3] bg-white flex items-center justify-center overflow-hidden rounded">
-        ${item._imgBase + item.imagen}
-      </div>
-      <h3 class="mt-3 font-semibold">${item.titulo || item.name || ''}</h3>
-      <p class="mt-1 text-sm text-ink-600 dark:text-ink-300 line-clamp-2">
-        ${item.descripcion || ''}
-      </p>
-      <div class="mt-3 text-xs uppercase tracking-wide text-ink-500">
-        ${(item.categoria || item.cat || 'General')}
-      </div>
-    </article>
-  `).join('');
+  grid.innerHTML = '';
+
+  items.forEach(item => {
+    const art   = document.createElement('article');
+    art.className = 'product-card rounded-lg border border-ink-200 dark:border-ink-800 p-3 flex flex-col';
+
+    const picWrap = document.createElement('div');
+    picWrap.className = 'aspect-[4/3] bg-white flex items-center justify-center overflow-hidden rounded';
+
+    const img   = document.createElement('img');
+    img.src     = (item._imgBase || '') + (item.imagen || '');
+    img.alt     = item.titulo || '';
+    img.className = 'w-full h-48 object-contain';
+    img.loading = 'lazy';
+
+    const h3    = document.createElement('h3');
+    h3.className = 'mt-3 font-semibold';
+    h3.textContent = item.titulo || '';
+
+    const p     = document.createElement('p');
+    p.className = 'mt-1 text-sm text-ink-600 dark:text-ink-300 line-clamp-2';
+    p.textContent = item.descripcion || '';
+
+    const cat   = document.createElement('div');
+    cat.className = 'mt-3 text-xs uppercase tracking-wide text-ink-500';
+    cat.textContent = item.categoria || 'General';
+
+    picWrap.appendChild(img);
+    art.appendChild(picWrap);
+    art.appendChild(h3);
+    art.appendChild(p);
+    art.appendChild(cat);
+    grid.appendChild(art);
+  });
 }
 
 // ==========================
@@ -87,27 +107,22 @@ function wireUpFiltersV2(data){
     });
   });
 
-  if (input) {
-    input.addEventListener('input', e=>{
-      q = e.target.value;
-      apply();
-    });
-  }
+  if (input) input.addEventListener('input', e=>{ q = e.target.value; apply(); });
 
   apply();
 }
 
 // ==========================
-// BOOT (DOM listo) — usa V2
+// BOOT
 // ==========================
 document.addEventListener('DOMContentLoaded', async () => {
-  console.log('[Catalog] multilote V2 ON', new Date().toISOString());
+  console.log('[Catalog] multilote V2 DOM ON', new Date().toISOString());
   try {
     const items = await cargarProductosV2();
     console.log('[Catalog] items cargados:', items.length);
     renderProductosV2(items);
     wireUpFiltersV2(items);
   } catch (err) {
-    console.error('[Catalog] Error V2:', err);
+    console.error('[Catalog] Error V2 DOM:', err);
   }
 });
