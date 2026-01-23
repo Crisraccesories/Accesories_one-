@@ -35,8 +35,6 @@ async function cargarProductos() {
 // ==========================
 // RENDER
 // ==========================
-
-
 function renderProductos(items) {
   const grid = document.getElementById('gridProductos');
   if (!grid) return;
@@ -56,6 +54,8 @@ function renderProductos(items) {
     </article>
   `).join('');
 }
+
+
 
 
 
